@@ -11,6 +11,32 @@
 		1638E2682B0A347C00E459A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1638E2672B0A347C00E459A0 /* ContentView.swift */; };
 		1638E26A2B0A347D00E459A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1638E2692B0A347D00E459A0 /* Assets.xcassets */; };
 		1638E26D2B0A347D00E459A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1638E26C2B0A347D00E459A0 /* Preview Assets.xcassets */; };
+		16F069B42B11D969005569A6 /* DashboardCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069B32B11D969005569A6 /* DashboardCart.swift */; };
+		16F069B72B11DE31005569A6 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069B62B11DE31005569A6 /* DashboardView.swift */; };
+		16F069B92B11F12D005569A6 /* PenjualanTerakhirCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069B82B11F12D005569A6 /* PenjualanTerakhirCart.swift */; };
+		16F069BB2B11FF72005569A6 /* InvoiceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069BA2B11FF72005569A6 /* InvoiceList.swift */; };
+		16F069BD2B1201BE005569A6 /* RiwayatKasirCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069BC2B1201BE005569A6 /* RiwayatKasirCart.swift */; };
+		16F069BF2B12024F005569A6 /* RiwayatKasirList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069BE2B12024F005569A6 /* RiwayatKasirList.swift */; };
+		16F069C12B1205BE005569A6 /* PembelianTerakhirCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069C02B1205BE005569A6 /* PembelianTerakhirCart.swift */; };
+		16F069C32B120636005569A6 /* InvoiceListPembelian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069C22B120636005569A6 /* InvoiceListPembelian.swift */; };
+		16F069C62B148FF3005569A6 /* StokView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069C52B148FF3005569A6 /* StokView.swift */; };
+		16F069CB2B165F78005569A6 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16F069CA2B165F78005569A6 /* PlusJakartaSans-Bold.ttf */; };
+		16F069CD2B165F89005569A6 /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16F069CC2B165F89005569A6 /* PlusJakartaSans-SemiBold.ttf */; };
+		16F069CF2B166024005569A6 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16F069CE2B166024005569A6 /* PlusJakartaSans-Regular.ttf */; };
+		16F069D12B166425005569A6 /* PlusJakartaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16F069D02B166425005569A6 /* PlusJakartaSans-Medium.ttf */; };
+		16F069D42B1670A6005569A6 /* StokListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069D32B1670A6005569A6 /* StokListItem.swift */; };
+		16F069D62B175DFE005569A6 /* StokListTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069D52B175DFE005569A6 /* StokListTableItem.swift */; };
+		16F069D82B184634005569A6 /* StokListBatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069D72B184634005569A6 /* StokListBatch.swift */; };
+		16F069DA2B18472D005569A6 /* StokListTableBatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069D92B18472D005569A6 /* StokListTableBatch.swift */; };
+		16F069DC2B1887F2005569A6 /* PenjualanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069DB2B1887F2005569A6 /* PenjualanView.swift */; };
+		16F06A102B1B2A5C005569A6 /* PopupPembayaranBerhasil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A0F2B1B2A5C005569A6 /* PopupPembayaranBerhasil.swift */; };
+		16F06A122B1B351B005569A6 /* PopUpSeleseaiPembayaran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A112B1B351B005569A6 /* PopUpSeleseaiPembayaran.swift */; };
+		16F06A142B1B38C6005569A6 /* StokOpnameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A132B1B38C6005569A6 /* StokOpnameView.swift */; };
+		16F06A162B1B3A03005569A6 /* StokOpnameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A152B1B3A03005569A6 /* StokOpnameList.swift */; };
+		16F06A182B1B3B09005569A6 /* StokOpnameListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A172B1B3B09005569A6 /* StokOpnameListTable.swift */; };
+		16F06A1A2B1B55FD005569A6 /* StokOpnameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A192B1B55FD005569A6 /* StokOpnameDetailView.swift */; };
+		16F06A1C2B1B598D005569A6 /* StokOpnameDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A1B2B1B598D005569A6 /* StokOpnameDetailList.swift */; };
+		16F06A1E2B1B59A8005569A6 /* StokOpnameDetailListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A1D2B1B59A8005569A6 /* StokOpnameDetailListTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +45,33 @@
 		1638E2672B0A347C00E459A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1638E2692B0A347D00E459A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1638E26C2B0A347D00E459A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16F069B32B11D969005569A6 /* DashboardCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCart.swift; sourceTree = "<group>"; };
+		16F069B62B11DE31005569A6 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		16F069B82B11F12D005569A6 /* PenjualanTerakhirCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenjualanTerakhirCart.swift; sourceTree = "<group>"; };
+		16F069BA2B11FF72005569A6 /* InvoiceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceList.swift; sourceTree = "<group>"; };
+		16F069BC2B1201BE005569A6 /* RiwayatKasirCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatKasirCart.swift; sourceTree = "<group>"; };
+		16F069BE2B12024F005569A6 /* RiwayatKasirList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatKasirList.swift; sourceTree = "<group>"; };
+		16F069C02B1205BE005569A6 /* PembelianTerakhirCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembelianTerakhirCart.swift; sourceTree = "<group>"; };
+		16F069C22B120636005569A6 /* InvoiceListPembelian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceListPembelian.swift; sourceTree = "<group>"; };
+		16F069C52B148FF3005569A6 /* StokView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokView.swift; sourceTree = "<group>"; };
+		16F069C92B165C5B005569A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		16F069CA2B165F78005569A6 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
+		16F069CC2B165F89005569A6 /* PlusJakartaSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		16F069CE2B166024005569A6 /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
+		16F069D02B166425005569A6 /* PlusJakartaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Medium.ttf"; sourceTree = "<group>"; };
+		16F069D32B1670A6005569A6 /* StokListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokListItem.swift; sourceTree = "<group>"; };
+		16F069D52B175DFE005569A6 /* StokListTableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokListTableItem.swift; sourceTree = "<group>"; };
+		16F069D72B184634005569A6 /* StokListBatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokListBatch.swift; sourceTree = "<group>"; };
+		16F069D92B18472D005569A6 /* StokListTableBatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokListTableBatch.swift; sourceTree = "<group>"; };
+		16F069DB2B1887F2005569A6 /* PenjualanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenjualanView.swift; sourceTree = "<group>"; };
+		16F06A0F2B1B2A5C005569A6 /* PopupPembayaranBerhasil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPembayaranBerhasil.swift; sourceTree = "<group>"; };
+		16F06A112B1B351B005569A6 /* PopUpSeleseaiPembayaran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpSeleseaiPembayaran.swift; sourceTree = "<group>"; };
+		16F06A132B1B38C6005569A6 /* StokOpnameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokOpnameView.swift; sourceTree = "<group>"; };
+		16F06A152B1B3A03005569A6 /* StokOpnameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokOpnameList.swift; sourceTree = "<group>"; };
+		16F06A172B1B3B09005569A6 /* StokOpnameListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokOpnameListTable.swift; sourceTree = "<group>"; };
+		16F06A192B1B55FD005569A6 /* StokOpnameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokOpnameDetailView.swift; sourceTree = "<group>"; };
+		16F06A1B2B1B598D005569A6 /* StokOpnameDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokOpnameDetailList.swift; sourceTree = "<group>"; };
+		16F06A1D2B1B59A8005569A6 /* StokOpnameDetailListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokOpnameDetailListTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +104,13 @@
 		1638E2642B0A347C00E459A0 /* Pharmacin */ = {
 			isa = PBXGroup;
 			children = (
+				16F069CC2B165F89005569A6 /* PlusJakartaSans-SemiBold.ttf */,
+				16F069CA2B165F78005569A6 /* PlusJakartaSans-Bold.ttf */,
+				16F069CE2B166024005569A6 /* PlusJakartaSans-Regular.ttf */,
+				16F069D02B166425005569A6 /* PlusJakartaSans-Medium.ttf */,
+				16F069C92B165C5B005569A6 /* Info.plist */,
+				16F069B52B11DDBF005569A6 /* View */,
+				16F069B22B11D920005569A6 /* ComponentView */,
 				1638E2652B0A347C00E459A0 /* PharmacinApp.swift */,
 				1638E2672B0A347C00E459A0 /* ContentView.swift */,
 				1638E2692B0A347D00E459A0 /* Assets.xcassets */,
@@ -65,6 +125,66 @@
 				1638E26C2B0A347D00E459A0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16F069B22B11D920005569A6 /* ComponentView */ = {
+			isa = PBXGroup;
+			children = (
+				16F06A0E2B1B2A47005569A6 /* PenjualanComponent */,
+				16F069D22B167028005569A6 /* StokComponent */,
+				16F069C42B148F7A005569A6 /* DashboardComponent */,
+			);
+			path = ComponentView;
+			sourceTree = "<group>";
+		};
+		16F069B52B11DDBF005569A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16F069B62B11DE31005569A6 /* DashboardView.swift */,
+				16F069C52B148FF3005569A6 /* StokView.swift */,
+				16F069DB2B1887F2005569A6 /* PenjualanView.swift */,
+				16F06A132B1B38C6005569A6 /* StokOpnameView.swift */,
+				16F06A192B1B55FD005569A6 /* StokOpnameDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16F069C42B148F7A005569A6 /* DashboardComponent */ = {
+			isa = PBXGroup;
+			children = (
+				16F069B32B11D969005569A6 /* DashboardCart.swift */,
+				16F069B82B11F12D005569A6 /* PenjualanTerakhirCart.swift */,
+				16F069BA2B11FF72005569A6 /* InvoiceList.swift */,
+				16F069BC2B1201BE005569A6 /* RiwayatKasirCart.swift */,
+				16F069BE2B12024F005569A6 /* RiwayatKasirList.swift */,
+				16F069C02B1205BE005569A6 /* PembelianTerakhirCart.swift */,
+				16F069C22B120636005569A6 /* InvoiceListPembelian.swift */,
+			);
+			path = DashboardComponent;
+			sourceTree = "<group>";
+		};
+		16F069D22B167028005569A6 /* StokComponent */ = {
+			isa = PBXGroup;
+			children = (
+				16F069D32B1670A6005569A6 /* StokListItem.swift */,
+				16F069D52B175DFE005569A6 /* StokListTableItem.swift */,
+				16F069D72B184634005569A6 /* StokListBatch.swift */,
+				16F069D92B18472D005569A6 /* StokListTableBatch.swift */,
+				16F06A152B1B3A03005569A6 /* StokOpnameList.swift */,
+				16F06A172B1B3B09005569A6 /* StokOpnameListTable.swift */,
+				16F06A1B2B1B598D005569A6 /* StokOpnameDetailList.swift */,
+				16F06A1D2B1B59A8005569A6 /* StokOpnameDetailListTable.swift */,
+			);
+			path = StokComponent;
+			sourceTree = "<group>";
+		};
+		16F06A0E2B1B2A47005569A6 /* PenjualanComponent */ = {
+			isa = PBXGroup;
+			children = (
+				16F06A0F2B1B2A5C005569A6 /* PopupPembayaranBerhasil.swift */,
+				16F06A112B1B351B005569A6 /* PopUpSeleseaiPembayaran.swift */,
+			);
+			path = PenjualanComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1638E26D2B0A347D00E459A0 /* Preview Assets.xcassets in Resources */,
+				16F069D12B166425005569A6 /* PlusJakartaSans-Medium.ttf in Resources */,
+				16F069CB2B165F78005569A6 /* PlusJakartaSans-Bold.ttf in Resources */,
+				16F069CD2B165F89005569A6 /* PlusJakartaSans-SemiBold.ttf in Resources */,
+				16F069CF2B166024005569A6 /* PlusJakartaSans-Regular.ttf in Resources */,
 				1638E26A2B0A347D00E459A0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +261,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F069BF2B12024F005569A6 /* RiwayatKasirList.swift in Sources */,
+				16F06A1C2B1B598D005569A6 /* StokOpnameDetailList.swift in Sources */,
+				16F069DA2B18472D005569A6 /* StokListTableBatch.swift in Sources */,
+				16F06A102B1B2A5C005569A6 /* PopupPembayaranBerhasil.swift in Sources */,
+				16F06A142B1B38C6005569A6 /* StokOpnameView.swift in Sources */,
+				16F06A122B1B351B005569A6 /* PopUpSeleseaiPembayaran.swift in Sources */,
+				16F069C12B1205BE005569A6 /* PembelianTerakhirCart.swift in Sources */,
+				16F069B42B11D969005569A6 /* DashboardCart.swift in Sources */,
+				16F069BB2B11FF72005569A6 /* InvoiceList.swift in Sources */,
+				16F069BD2B1201BE005569A6 /* RiwayatKasirCart.swift in Sources */,
+				16F06A1E2B1B59A8005569A6 /* StokOpnameDetailListTable.swift in Sources */,
+				16F069D82B184634005569A6 /* StokListBatch.swift in Sources */,
+				16F069DC2B1887F2005569A6 /* PenjualanView.swift in Sources */,
+				16F069B92B11F12D005569A6 /* PenjualanTerakhirCart.swift in Sources */,
+				16F069D42B1670A6005569A6 /* StokListItem.swift in Sources */,
 				1638E2682B0A347C00E459A0 /* ContentView.swift in Sources */,
+				16F06A1A2B1B55FD005569A6 /* StokOpnameDetailView.swift in Sources */,
+				16F069C32B120636005569A6 /* InvoiceListPembelian.swift in Sources */,
+				16F069B72B11DE31005569A6 /* DashboardView.swift in Sources */,
+				16F06A162B1B3A03005569A6 /* StokOpnameList.swift in Sources */,
 				1638E2662B0A347C00E459A0 /* PharmacinApp.swift in Sources */,
+				16F06A182B1B3B09005569A6 /* StokOpnameListTable.swift in Sources */,
+				16F069D62B175DFE005569A6 /* StokListTableItem.swift in Sources */,
+				16F069C62B148FF3005569A6 /* StokView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +421,7 @@
 				DEVELOPMENT_TEAM = A353S377CB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pharmacin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +451,7 @@
 				DEVELOPMENT_TEAM = A353S377CB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pharmacin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

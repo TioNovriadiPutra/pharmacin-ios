@@ -41,6 +41,8 @@ struct StokOpnameDetailView: View {
                     .frame(width: 1098, height: 44)
                     .cornerRadius(10)
                     
+                    
+                    StokOpnameDetailList()
                         
                         
                     }

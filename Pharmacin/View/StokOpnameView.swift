@@ -11,6 +11,7 @@ struct StokOpnameView: View {
     @State private var searchText: String = ""
     
     var body: some View {
+        
         NavigationStack{
             ZStack{
                 Color(red: 0.98, green: 0.98, blue: 0.99)

@@ -22,25 +22,25 @@ struct StokOpnameDetailList: View {
                         .foregroundColor(Color("LightGray"))
                         .frame(width: 182, alignment: .leading)
                     Spacer()
-                    Text("Tgl. Terakhir")
+                    Text("Stok Terdata")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 182, alignment: .leading)
+                        .frame(width: 182, alignment: .center)
+                    Spacer()
+                    Text("Stok Fisik")
+                        .font(.custom("PlusJakartaSans-Medium", size: 16))
+                        .foregroundColor(Color("LightGray"))
+                        .frame(width: 182, alignment: .center)
+                    Spacer()
+                    Text("Selisih")
+                        .font(.custom("PlusJakartaSans-Medium", size: 16))
+                        .foregroundColor(Color("LightGray"))
+                        .frame(width: 182, alignment: .center)
                     Spacer()
                     Text("Stok")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 182, alignment: .leading)
-                    Spacer()
-                    Text("Harga Beli")
-                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                        .foregroundColor(Color("LightGray"))
-                        .frame(width: 182, alignment: .leading)
-                    Spacer()
-                    Text("Tindakan")
-                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                        .foregroundColor(Color("LightGray"))
-                        .frame(width: 86, alignment: .leading)
+                        .frame(width: 86, alignment: .center)
                 }
             }
             .padding()
@@ -51,9 +51,10 @@ struct StokOpnameDetailList: View {
             
             
             VStack {
-                StokOpnameListTable()
-                StokOpnameListTable()
-                StokOpnameListTable()
+                
+                StokOpnameDetailListTable()
+                StokOpnameDetailListTable()
+                StokOpnameDetailListTable()
                 
                 Spacer()
             }

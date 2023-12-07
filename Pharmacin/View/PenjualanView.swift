@@ -10,7 +10,8 @@ import SwiftUI
 struct PenjualanView: View {
     @State private var searchName: String = ""
     @State private var searchPayment: String = ""
-    @State private var showSuccessPopup: Bool = false
+    @Binding var showSuccessPopup: Bool
+    
     
     
     var body: some View {
@@ -291,21 +292,6 @@ struct PenjualanView: View {
                 }
                 .padding()
                 
-                if showSuccessPopup {
-                    ZStack {
-                            // Tampilan latar belakang dengan opacity yang lebih rendah saat popup muncul
-                        
-                            Color(red: 0, green: 0, blue: 0)
-                                .opacity(0.4) // Atur opacity sesuai keinginan Anda
-                                .ignoresSafeArea()
-                                
-                            PopupBerhasil()
-                                .zIndex(1)
-                                .onTapGesture { // Menyembunyikan popup ketika di-tap di luar popup
-                                                            showSuccessPopup = false
-                                                        }// Pastikan popup ditampilkan di atas lapisan lain
-                        }
-                }
             }
         }
     }
@@ -314,8 +300,8 @@ struct PenjualanView: View {
 
 struct Penjualan_Preview: PreviewProvider {
     static var previews: some View {
-        PenjualanView()
-        PenjualanView().previewInterfaceOrientation(.landscapeRight)
+        PenjualanView(showSuccessPopup: .constant(true))
+        PenjualanView(showSuccessPopup: .constant(true)).previewInterfaceOrientation(.landscapeRight)
         
     }
 }

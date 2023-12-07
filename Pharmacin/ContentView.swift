@@ -20,7 +20,7 @@ struct ContentView: View {
     @State private var isDashboard = false
     @State private var isStok = false
     @State private var isNotifikasi = false
-    @State private var isPenjualan = false
+    @State private var isTambahPenjualan = false
     @State private var isObat = false
     @State private var isPabrikan = false
     @State private var isPembelian = false
@@ -36,6 +36,8 @@ struct ContentView: View {
     @State private var isBukuBesarSubMenuVisible = false
     @State private var isManajemenSubMenuVisible = false
     @State private var isOptionSubMenuVisible = false
+    
+    @State private var showSuccessPopup = false
     
     
     
@@ -176,10 +178,10 @@ struct ContentView: View {
                                                 VStack (alignment:.leading){
                                                     Button(action: {
                                                         // Menutup submenu setelah dipilih (jika itu yang diinginkan)
-                                                        isDashboard = true
+                                                        isTambahPenjualan = true
                                                         isPenjualanSubMenuVisible = false
                                                         isExpanded = false
-                                                        
+                                        
                                                         print("Sub-menu 1 dipilih")
                                                         // TODO: Tambahkan logika untuk tindakan sub-menu pertama
                                                     }) {
@@ -680,7 +682,7 @@ struct ContentView: View {
                                         VStack (alignment:.leading){
                                             Button(action: {
                                                 // Menutup submenu setelah dipilih (jika itu yang diinginkan)
-                                                isDashboard = true
+                                                isStok = true
                                                 isManajemenSubMenuVisible = false
                                                 isExpanded = false
                                                 
@@ -757,11 +759,46 @@ struct ContentView: View {
                             Color.gray.opacity(isExpanded ? 0.5 : 0) // Tambahkan lapisan abu-abu dengan opacity
                         )
                 }
+                
+
                 if isStok{
-                    StokView().zIndex(-2)
+                    StokView()
+                        .zIndex(-2)
                         .frame(maxWidth: .infinity)
                         .offset(x : 69)
+                    
                 }
+                
+                if isTambahPenjualan {
+                    
+                        PenjualanView(showSuccessPopup: $showSuccessPopup)
+                            .zIndex(-2)
+                            .frame(maxWidth: .infinity)
+                            .offset(x: 69)
+                            .overlay(
+                                Color.gray.opacity(isExpanded ? 0.5 : 0) // Tambahkan lapisan abu-abu dengan opacity
+                            )
+                        
+                        if showSuccessPopup {
+                            ZStack {
+                                // Background color with opacity
+                                Color.black.opacity(0.5)
+                                    .edgesIgnoringSafeArea(.all)
+                                
+                                // Popup content
+                                VStack {
+                                    // Your pop-up content here
+                                    PopupBerhasil()
+                                        .onTapGesture {
+                                            showSuccessPopup = false
+                                        }
+                                    
+                                }
+                                
+                            }
+                        }
+                    }
+                
             }
             
         }

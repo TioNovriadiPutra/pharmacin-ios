@@ -37,6 +37,35 @@
 		16F06A1A2B1B55FD005569A6 /* StokOpnameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A192B1B55FD005569A6 /* StokOpnameDetailView.swift */; };
 		16F06A1C2B1B598D005569A6 /* StokOpnameDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A1B2B1B598D005569A6 /* StokOpnameDetailList.swift */; };
 		16F06A1E2B1B59A8005569A6 /* StokOpnameDetailListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A1D2B1B59A8005569A6 /* StokOpnameDetailListTable.swift */; };
+		16F06A3A2B1E2C9E005569A6 /* StokRiwayatOpnameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A392B1E2C9E005569A6 /* StokRiwayatOpnameView.swift */; };
+		16F06A3C2B1E345E005569A6 /* StokRiwayatOpnameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A3B2B1E345E005569A6 /* StokRiwayatOpnameList.swift */; };
+		16F06A3E2B1E3623005569A6 /* StokRiwayatOpnameListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A3D2B1E3623005569A6 /* StokRiwayatOpnameListTable.swift */; };
+		16F06A402B1E4989005569A6 /* KelolaPenjualanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A3F2B1E4989005569A6 /* KelolaPenjualanView.swift */; };
+		16F06A422B1E4B56005569A6 /* KelolaPenjualanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A412B1E4B56005569A6 /* KelolaPenjualanList.swift */; };
+		16F06A442B1E4BBE005569A6 /* KelolaPenjualanListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A432B1E4BBE005569A6 /* KelolaPenjualanListTable.swift */; };
+		16F06A462B1E4CF6005569A6 /* ObatKategoriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A452B1E4CF6005569A6 /* ObatKategoriView.swift */; };
+		16F06A492B1E4E0B005569A6 /* ObatKategoriList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A482B1E4E0B005569A6 /* ObatKategoriList.swift */; };
+		16F06A4B2B1E4E1A005569A6 /* ObatKategoriListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A4A2B1E4E1A005569A6 /* ObatKategoriListTable.swift */; };
+		16F06A4D2B1E4FBC005569A6 /* ObatKelolaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A4C2B1E4FBC005569A6 /* ObatKelolaItem.swift */; };
+		16F06A4F2B1E5050005569A6 /* ObatKelolaItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A4E2B1E5050005569A6 /* ObatKelolaItemList.swift */; };
+		16F06A512B1E523B005569A6 /* ObatKelolaItemListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A502B1E523B005569A6 /* ObatKelolaItemListTable.swift */; };
+		16F06A532B1E539A005569A6 /* TambahObatPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A522B1E539A005569A6 /* TambahObatPopUp.swift */; };
+		16F06A552B1EE061005569A6 /* ObatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A542B1EE061005569A6 /* ObatDetailView.swift */; };
+		16F06A572B1EE3A8005569A6 /* PembelianObatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A562B1EE3A8005569A6 /* PembelianObatList.swift */; };
+		16F06A592B1EE451005569A6 /* PembelianObatListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A582B1EE451005569A6 /* PembelianObatListTable.swift */; };
+		16F06A5B2B1EE53D005569A6 /* PenjualanObatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A5A2B1EE53D005569A6 /* PenjualanObatList.swift */; };
+		16F06A5D2B1EE54B005569A6 /* PenjualanObatListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A5C2B1EE54B005569A6 /* PenjualanObatListTable.swift */; };
+		16F06A5F2B20A742005569A6 /* InformasiObatPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A5E2B20A742005569A6 /* InformasiObatPopUp.swift */; };
+		16F06A612B21EB5F005569A6 /* PabrikanKelolaPabrikView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A602B21EB5F005569A6 /* PabrikanKelolaPabrikView.swift */; };
+		16F06A642B21EC56005569A6 /* KelolaPabrikList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A632B21EC56005569A6 /* KelolaPabrikList.swift */; };
+		16F06A662B21ECA2005569A6 /* KelolaPabrikListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A652B21ECA2005569A6 /* KelolaPabrikListTable.swift */; };
+		16F06A682B21EF5F005569A6 /* TambahPabrikPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A672B21EF5F005569A6 /* TambahPabrikPopUp.swift */; };
+		16F06A6A2B21F0B5005569A6 /* PabrikanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A692B21F0B5005569A6 /* PabrikanDetailView.swift */; };
+		16F06A6C2B21F1C4005569A6 /* JenisObatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A6B2B21F1C4005569A6 /* JenisObatList.swift */; };
+		16F06A6E2B21F2B4005569A6 /* JenisObatListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A6D2B21F2B4005569A6 /* JenisObatListTable.swift */; };
+		16F06A702B21F3AC005569A6 /* PembelianObatPabrikanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A6F2B21F3AC005569A6 /* PembelianObatPabrikanList.swift */; };
+		16F06A722B21F4C8005569A6 /* PembelianObatPabrikanListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A712B21F4C8005569A6 /* PembelianObatPabrikanListTable.swift */; };
+		16F06A742B21F5C4005569A6 /* InformasiPabrikPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F06A732B21F5C4005569A6 /* InformasiPabrikPopUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +101,35 @@
 		16F06A192B1B55FD005569A6 /* StokOpnameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokOpnameDetailView.swift; sourceTree = "<group>"; };
 		16F06A1B2B1B598D005569A6 /* StokOpnameDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokOpnameDetailList.swift; sourceTree = "<group>"; };
 		16F06A1D2B1B59A8005569A6 /* StokOpnameDetailListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokOpnameDetailListTable.swift; sourceTree = "<group>"; };
+		16F06A392B1E2C9E005569A6 /* StokRiwayatOpnameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokRiwayatOpnameView.swift; sourceTree = "<group>"; };
+		16F06A3B2B1E345E005569A6 /* StokRiwayatOpnameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokRiwayatOpnameList.swift; sourceTree = "<group>"; };
+		16F06A3D2B1E3623005569A6 /* StokRiwayatOpnameListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokRiwayatOpnameListTable.swift; sourceTree = "<group>"; };
+		16F06A3F2B1E4989005569A6 /* KelolaPenjualanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelolaPenjualanView.swift; sourceTree = "<group>"; };
+		16F06A412B1E4B56005569A6 /* KelolaPenjualanList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelolaPenjualanList.swift; sourceTree = "<group>"; };
+		16F06A432B1E4BBE005569A6 /* KelolaPenjualanListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelolaPenjualanListTable.swift; sourceTree = "<group>"; };
+		16F06A452B1E4CF6005569A6 /* ObatKategoriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatKategoriView.swift; sourceTree = "<group>"; };
+		16F06A482B1E4E0B005569A6 /* ObatKategoriList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatKategoriList.swift; sourceTree = "<group>"; };
+		16F06A4A2B1E4E1A005569A6 /* ObatKategoriListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatKategoriListTable.swift; sourceTree = "<group>"; };
+		16F06A4C2B1E4FBC005569A6 /* ObatKelolaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatKelolaItem.swift; sourceTree = "<group>"; };
+		16F06A4E2B1E5050005569A6 /* ObatKelolaItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatKelolaItemList.swift; sourceTree = "<group>"; };
+		16F06A502B1E523B005569A6 /* ObatKelolaItemListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatKelolaItemListTable.swift; sourceTree = "<group>"; };
+		16F06A522B1E539A005569A6 /* TambahObatPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TambahObatPopUp.swift; sourceTree = "<group>"; };
+		16F06A542B1EE061005569A6 /* ObatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatDetailView.swift; sourceTree = "<group>"; };
+		16F06A562B1EE3A8005569A6 /* PembelianObatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembelianObatList.swift; sourceTree = "<group>"; };
+		16F06A582B1EE451005569A6 /* PembelianObatListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembelianObatListTable.swift; sourceTree = "<group>"; };
+		16F06A5A2B1EE53D005569A6 /* PenjualanObatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenjualanObatList.swift; sourceTree = "<group>"; };
+		16F06A5C2B1EE54B005569A6 /* PenjualanObatListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenjualanObatListTable.swift; sourceTree = "<group>"; };
+		16F06A5E2B20A742005569A6 /* InformasiObatPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformasiObatPopUp.swift; sourceTree = "<group>"; };
+		16F06A602B21EB5F005569A6 /* PabrikanKelolaPabrikView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PabrikanKelolaPabrikView.swift; sourceTree = "<group>"; };
+		16F06A632B21EC56005569A6 /* KelolaPabrikList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelolaPabrikList.swift; sourceTree = "<group>"; };
+		16F06A652B21ECA2005569A6 /* KelolaPabrikListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelolaPabrikListTable.swift; sourceTree = "<group>"; };
+		16F06A672B21EF5F005569A6 /* TambahPabrikPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TambahPabrikPopUp.swift; sourceTree = "<group>"; };
+		16F06A692B21F0B5005569A6 /* PabrikanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PabrikanDetailView.swift; sourceTree = "<group>"; };
+		16F06A6B2B21F1C4005569A6 /* JenisObatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenisObatList.swift; sourceTree = "<group>"; };
+		16F06A6D2B21F2B4005569A6 /* JenisObatListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenisObatListTable.swift; sourceTree = "<group>"; };
+		16F06A6F2B21F3AC005569A6 /* PembelianObatPabrikanList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembelianObatPabrikanList.swift; sourceTree = "<group>"; };
+		16F06A712B21F4C8005569A6 /* PembelianObatPabrikanListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembelianObatPabrikanListTable.swift; sourceTree = "<group>"; };
+		16F06A732B21F5C4005569A6 /* InformasiPabrikPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformasiPabrikPopUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +188,8 @@
 		16F069B22B11D920005569A6 /* ComponentView */ = {
 			isa = PBXGroup;
 			children = (
+				16F06A622B21EC3E005569A6 /* PabrikanComponent */,
+				16F06A472B1E4DDE005569A6 /* ObatComponent */,
 				16F06A0E2B1B2A47005569A6 /* PenjualanComponent */,
 				16F069D22B167028005569A6 /* StokComponent */,
 				16F069C42B148F7A005569A6 /* DashboardComponent */,
@@ -145,6 +205,13 @@
 				16F069DB2B1887F2005569A6 /* PenjualanView.swift */,
 				16F06A132B1B38C6005569A6 /* StokOpnameView.swift */,
 				16F06A192B1B55FD005569A6 /* StokOpnameDetailView.swift */,
+				16F06A392B1E2C9E005569A6 /* StokRiwayatOpnameView.swift */,
+				16F06A3F2B1E4989005569A6 /* KelolaPenjualanView.swift */,
+				16F06A452B1E4CF6005569A6 /* ObatKategoriView.swift */,
+				16F06A4C2B1E4FBC005569A6 /* ObatKelolaItem.swift */,
+				16F06A542B1EE061005569A6 /* ObatDetailView.swift */,
+				16F06A602B21EB5F005569A6 /* PabrikanKelolaPabrikView.swift */,
+				16F06A692B21F0B5005569A6 /* PabrikanDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +241,8 @@
 				16F06A172B1B3B09005569A6 /* StokOpnameListTable.swift */,
 				16F06A1B2B1B598D005569A6 /* StokOpnameDetailList.swift */,
 				16F06A1D2B1B59A8005569A6 /* StokOpnameDetailListTable.swift */,
+				16F06A3B2B1E345E005569A6 /* StokRiwayatOpnameList.swift */,
+				16F06A3D2B1E3623005569A6 /* StokRiwayatOpnameListTable.swift */,
 			);
 			path = StokComponent;
 			sourceTree = "<group>";
@@ -183,8 +252,42 @@
 			children = (
 				16F06A0F2B1B2A5C005569A6 /* PopupPembayaranBerhasil.swift */,
 				16F06A112B1B351B005569A6 /* PopUpSeleseaiPembayaran.swift */,
+				16F06A412B1E4B56005569A6 /* KelolaPenjualanList.swift */,
+				16F06A432B1E4BBE005569A6 /* KelolaPenjualanListTable.swift */,
 			);
 			path = PenjualanComponent;
+			sourceTree = "<group>";
+		};
+		16F06A472B1E4DDE005569A6 /* ObatComponent */ = {
+			isa = PBXGroup;
+			children = (
+				16F06A482B1E4E0B005569A6 /* ObatKategoriList.swift */,
+				16F06A4A2B1E4E1A005569A6 /* ObatKategoriListTable.swift */,
+				16F06A4E2B1E5050005569A6 /* ObatKelolaItemList.swift */,
+				16F06A502B1E523B005569A6 /* ObatKelolaItemListTable.swift */,
+				16F06A522B1E539A005569A6 /* TambahObatPopUp.swift */,
+				16F06A562B1EE3A8005569A6 /* PembelianObatList.swift */,
+				16F06A582B1EE451005569A6 /* PembelianObatListTable.swift */,
+				16F06A5A2B1EE53D005569A6 /* PenjualanObatList.swift */,
+				16F06A5C2B1EE54B005569A6 /* PenjualanObatListTable.swift */,
+				16F06A5E2B20A742005569A6 /* InformasiObatPopUp.swift */,
+			);
+			path = ObatComponent;
+			sourceTree = "<group>";
+		};
+		16F06A622B21EC3E005569A6 /* PabrikanComponent */ = {
+			isa = PBXGroup;
+			children = (
+				16F06A632B21EC56005569A6 /* KelolaPabrikList.swift */,
+				16F06A652B21ECA2005569A6 /* KelolaPabrikListTable.swift */,
+				16F06A672B21EF5F005569A6 /* TambahPabrikPopUp.swift */,
+				16F06A6B2B21F1C4005569A6 /* JenisObatList.swift */,
+				16F06A6D2B21F2B4005569A6 /* JenisObatListTable.swift */,
+				16F06A6F2B21F3AC005569A6 /* PembelianObatPabrikanList.swift */,
+				16F06A712B21F4C8005569A6 /* PembelianObatPabrikanListTable.swift */,
+				16F06A732B21F5C4005569A6 /* InformasiPabrikPopUp.swift */,
+			);
+			path = PabrikanComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,28 +364,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F06A3C2B1E345E005569A6 /* StokRiwayatOpnameList.swift in Sources */,
 				16F069BF2B12024F005569A6 /* RiwayatKasirList.swift in Sources */,
+				16F06A6E2B21F2B4005569A6 /* JenisObatListTable.swift in Sources */,
+				16F06A4D2B1E4FBC005569A6 /* ObatKelolaItem.swift in Sources */,
+				16F06A422B1E4B56005569A6 /* KelolaPenjualanList.swift in Sources */,
 				16F06A1C2B1B598D005569A6 /* StokOpnameDetailList.swift in Sources */,
 				16F069DA2B18472D005569A6 /* StokListTableBatch.swift in Sources */,
 				16F06A102B1B2A5C005569A6 /* PopupPembayaranBerhasil.swift in Sources */,
 				16F06A142B1B38C6005569A6 /* StokOpnameView.swift in Sources */,
 				16F06A122B1B351B005569A6 /* PopUpSeleseaiPembayaran.swift in Sources */,
 				16F069C12B1205BE005569A6 /* PembelianTerakhirCart.swift in Sources */,
+				16F06A492B1E4E0B005569A6 /* ObatKategoriList.swift in Sources */,
+				16F06A662B21ECA2005569A6 /* KelolaPabrikListTable.swift in Sources */,
+				16F06A742B21F5C4005569A6 /* InformasiPabrikPopUp.swift in Sources */,
 				16F069B42B11D969005569A6 /* DashboardCart.swift in Sources */,
 				16F069BB2B11FF72005569A6 /* InvoiceList.swift in Sources */,
+				16F06A4B2B1E4E1A005569A6 /* ObatKategoriListTable.swift in Sources */,
+				16F06A572B1EE3A8005569A6 /* PembelianObatList.swift in Sources */,
+				16F06A3A2B1E2C9E005569A6 /* StokRiwayatOpnameView.swift in Sources */,
 				16F069BD2B1201BE005569A6 /* RiwayatKasirCart.swift in Sources */,
+				16F06A612B21EB5F005569A6 /* PabrikanKelolaPabrikView.swift in Sources */,
 				16F06A1E2B1B59A8005569A6 /* StokOpnameDetailListTable.swift in Sources */,
 				16F069D82B184634005569A6 /* StokListBatch.swift in Sources */,
 				16F069DC2B1887F2005569A6 /* PenjualanView.swift in Sources */,
+				16F06A5F2B20A742005569A6 /* InformasiObatPopUp.swift in Sources */,
 				16F069B92B11F12D005569A6 /* PenjualanTerakhirCart.swift in Sources */,
 				16F069D42B1670A6005569A6 /* StokListItem.swift in Sources */,
+				16F06A6A2B21F0B5005569A6 /* PabrikanDetailView.swift in Sources */,
+				16F06A532B1E539A005569A6 /* TambahObatPopUp.swift in Sources */,
+				16F06A512B1E523B005569A6 /* ObatKelolaItemListTable.swift in Sources */,
 				1638E2682B0A347C00E459A0 /* ContentView.swift in Sources */,
+				16F06A442B1E4BBE005569A6 /* KelolaPenjualanListTable.swift in Sources */,
+				16F06A552B1EE061005569A6 /* ObatDetailView.swift in Sources */,
 				16F06A1A2B1B55FD005569A6 /* StokOpnameDetailView.swift in Sources */,
 				16F069C32B120636005569A6 /* InvoiceListPembelian.swift in Sources */,
+				16F06A5D2B1EE54B005569A6 /* PenjualanObatListTable.swift in Sources */,
+				16F06A6C2B21F1C4005569A6 /* JenisObatList.swift in Sources */,
 				16F069B72B11DE31005569A6 /* DashboardView.swift in Sources */,
+				16F06A592B1EE451005569A6 /* PembelianObatListTable.swift in Sources */,
+				16F06A722B21F4C8005569A6 /* PembelianObatPabrikanListTable.swift in Sources */,
+				16F06A3E2B1E3623005569A6 /* StokRiwayatOpnameListTable.swift in Sources */,
 				16F06A162B1B3A03005569A6 /* StokOpnameList.swift in Sources */,
+				16F06A4F2B1E5050005569A6 /* ObatKelolaItemList.swift in Sources */,
 				1638E2662B0A347C00E459A0 /* PharmacinApp.swift in Sources */,
 				16F06A182B1B3B09005569A6 /* StokOpnameListTable.swift in Sources */,
+				16F06A5B2B1EE53D005569A6 /* PenjualanObatList.swift in Sources */,
+				16F06A702B21F3AC005569A6 /* PembelianObatPabrikanList.swift in Sources */,
+				16F06A642B21EC56005569A6 /* KelolaPabrikList.swift in Sources */,
+				16F06A682B21EF5F005569A6 /* TambahPabrikPopUp.swift in Sources */,
+				16F06A402B1E4989005569A6 /* KelolaPenjualanView.swift in Sources */,
+				16F06A462B1E4CF6005569A6 /* ObatKategoriView.swift in Sources */,
 				16F069D62B175DFE005569A6 /* StokListTableItem.swift in Sources */,
 				16F069C62B148FF3005569A6 /* StokView.swift in Sources */,
 			);

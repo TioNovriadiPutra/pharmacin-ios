@@ -9,7 +9,34 @@ import SwiftUI
 
 struct PembelianObatListTable: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text("DD-MM-YYYY")
+                .font(.custom("PlusJakartaSans-Regular", size: 14))
+                .foregroundColor(Color("RegularText"))
+                .frame(width: 182, alignment: .leading)
+            Spacer()
+            Text("000000")
+                .font(.custom("PlusJakartaSans-Regular", size: 14))
+                .foregroundColor(Color("RegularText"))
+                .frame(width: 182, alignment: .leading)
+            Spacer()
+            Text("5")
+                .font(.custom("PlusJakartaSans-Regular", size: 14))
+                .foregroundColor(Color("RegularText"))
+                .frame(width: 182, alignment: .leading)
+            Spacer()
+            Text("100.000.000")
+                .font(.custom("PlusJakartaSans-Regular", size: 14))
+                .foregroundColor(Color("RegularText"))
+                .frame(width: 182, alignment: .leading)
+            Spacer()
+            Text("222.000.000")
+                .font(.custom("PlusJakartaSans-Regular", size: 14))
+                .foregroundColor(Color("RegularText"))
+                .frame(width: 120, alignment: .leading)
+            
+        }
+        .padding()
     }
 }
 

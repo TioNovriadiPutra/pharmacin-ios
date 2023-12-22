@@ -1,0 +1,9 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="calendar-block-01">
+<rect width="56" height="56" rx="8" fill="#FFE3E3"/>
+<path id="Vector" d="M27.2632 43H26.6C20.6603 43 17.6905 43 15.8452 41.0052C14 39.0103 14 35.7997 14 29.3784V28.6216C14 22.2003 14 18.9897 15.8452 16.9948C17.6905 15 20.6603 15 26.6 15H29.4C35.3397 15 38.3096 15 40.1548 16.9948C42 18.9897 42 22.2003 42 28.6216C42 29.239 41.9996 29.7368 41.9996 29.7368" stroke="#D85E5E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M32.4644 41.3891L39.5356 33.6109M41 37.5C41 40.5376 38.7614 43 36 43C33.2386 43 31 40.5376 31 37.5C31 34.4624 33.2386 32 36 32C38.7614 32 41 34.4624 41 37.5Z" stroke="#D85E5E" stroke-width="1.8" stroke-linejoin="round"/>
+<path id="Vector_3" d="M37 13V16M19 13V16" stroke="#D85E5E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M15 22H41" stroke="#D85E5E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

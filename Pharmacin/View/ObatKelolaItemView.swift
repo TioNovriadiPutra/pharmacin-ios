@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ObatKelolaItem: View {
+struct ObatKelolaItemView: View {
     @State private var searchText: String = ""
     
     var body: some View {
@@ -73,8 +73,8 @@ struct ObatKelolaItem: View {
 
 struct Obat_KelolaItemView: PreviewProvider {
     static var previews: some View {
-        ObatKelolaItem()
-        ObatKelolaItem().previewInterfaceOrientation(.landscapeRight)
+        ObatKelolaItemView()
+        ObatKelolaItemView().previewInterfaceOrientation(.landscapeRight)
     }
 }
 

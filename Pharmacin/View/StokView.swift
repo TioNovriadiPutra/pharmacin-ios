@@ -14,13 +14,14 @@ struct StokView: View {
     
     var body: some View {
         NavigationStack{
+            GeometryReader { geometry in
             ZStack{
                 Color(red: 0.98, green: 0.98, blue: 0.99)
                     .ignoresSafeArea()
                 
-                ScrollView{
+                
                 VStack(alignment: .leading){
-                    HStack{
+                    HStack(spacing:14){
                         Text("Stok")
                             .font(.custom("PlusJakartaSans-Bold", size: 24))
                             .foregroundColor(Color("Subtitle"))
@@ -40,7 +41,7 @@ struct StokView: View {
                                 .background(isPerItemSelected ? Color("Green") : Color(Color(red: 0.94, green: 0.94, blue: 0.94)))
                                 .cornerRadius(10)
                         }
-                        .padding(.trailing,5)
+                        
                         
                         Button(action: {
                             isPerBatchSelected = true
@@ -71,7 +72,7 @@ struct StokView: View {
                         .frame(width: 350, height: 44)
                         .background(Color(red: 0.94, green: 0.94, blue: 0.94))
                         .cornerRadius(10)
-                        .padding()
+                        .padding(.trailing,70)
                         
                         
                         
@@ -85,11 +86,13 @@ struct StokView: View {
                         
                     }
                     
+                    Spacer()
                 }
                 .padding()
-            }
+                
                 
             }
+        }
         }
     }
 }

@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct KonfirmasiPembelianPopUp: View {
+    @Binding var showKonfirmasiPembelianPopUp : Bool
+    @Binding var showKelolaPembelian : Bool
+    
     var body: some View {
         VStack{
             HStack{
-                
-                Image(systemName: "arrow.left").imageScale(.large)
-                    .foregroundColor(Color("LightGray"))
-                    .padding(.leading,20)
+                Button(action: {
+                    showKonfirmasiPembelianPopUp = false
+                }, label: {
+                    Image("BackButton")
+                        .padding(.leading,20)
+                })
+              
                 
                 Text("Konfirmasi Pembelian")
                     .font(.custom("PlusJakartaSans-Bold", size: 24))
@@ -29,6 +35,7 @@ struct KonfirmasiPembelianPopUp: View {
                 .padding()
             Text("3")
                 .font(.custom("PlusJakartaSans-Bold", size: 24))
+                .padding(.bottom,40)
             
             Text("Total Pembelian")
                 .font(.custom("PlusJakartaSans-medium", size: 16))
@@ -40,9 +47,10 @@ struct KonfirmasiPembelianPopUp: View {
             Spacer()
             
             Divider()
+                .padding()
             
             Button{
-               ("Test")
+               showKelolaPembelian = true
             }label: {
                 Text("Tambah Penjualan")
                     .font(.custom("PlusJakartaSans-SemiBold", size: 16))
@@ -64,5 +72,5 @@ struct KonfirmasiPembelianPopUp: View {
 }
 
 #Preview {
-    KonfirmasiPembelianPopUp()
+    KonfirmasiPembelianPopUp(showKonfirmasiPembelianPopUp: .constant(true), showKelolaPembelian: .constant(true))
 }

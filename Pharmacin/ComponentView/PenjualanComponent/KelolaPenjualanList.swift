@@ -9,7 +9,7 @@ import SwiftUI
 
 struct KelolaPenjualanList: View {
     var body: some View {
-        VStack {
+        VStack (alignment: .leading){
             VStack{
                 HStack {
                     Spacer()
@@ -42,7 +42,8 @@ struct KelolaPenjualanList: View {
                 }
             }
             .padding()
-            .frame(width: 1098, height: 54)
+            .frame(height: 54)
+            .frame(width: UIScreen.main.bounds.size.width - 100)
             .background(.white)
             .cornerRadius(10)
             
@@ -57,13 +58,17 @@ struct KelolaPenjualanList: View {
                 
                 Spacer()
             }
-            .frame(width: 1098, height: 684)
+            .frame(height: 684)
+            .frame(width: UIScreen.main.bounds.size.width - 100)
             .background(.white)
             .cornerRadius(10)
         }
     }
 }
 
-#Preview {
-    KelolaPenjualanList()
+struct Kelola_PenjualanListView: PreviewProvider {
+    static var previews: some View {
+        KelolaPenjualanView(showTambahPenjualanView: .constant(true), showKelolaPenjualanView: .constant(true))
+        KelolaPenjualanView(showTambahPenjualanView: .constant(true), showKelolaPenjualanView: .constant(true)).previewInterfaceOrientation(.landscapeRight)
+    }
 }

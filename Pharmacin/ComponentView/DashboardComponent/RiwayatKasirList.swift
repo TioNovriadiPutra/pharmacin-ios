@@ -26,6 +26,7 @@ struct RiwayatKasirList: View {
                 .frame(width: 100, alignment: .leading)
             
         }.padding()
+        .frame(width: UIScreen.main.bounds.size.width * 0.5 - 85)
     }
 }
 

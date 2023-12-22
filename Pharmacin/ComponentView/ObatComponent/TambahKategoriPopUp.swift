@@ -8,11 +8,79 @@
 import SwiftUI
 
 struct TambahKategoriPopUp: View {
+    @State private var namaKategori: String = ""
+    @Binding var showTambahKategoriPopUp: Bool
+   
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            VStack(alignment: .center){
+                Spacer()
+                HStack{
+                    Button(action: {
+                        showTambahKategoriPopUp = false
+                    }){
+                        Image("BackButton")
+                            .padding(.leading,20)
+                    }
+                    
+                    Text("Tambah Kategori")
+                        .font(.custom("PlusJakartaSans-Bold", size: 24))
+                        .padding(.leading,90)
+                        
+                    
+                    Spacer()
+                }
+                .padding(.bottom,50)
+                
+                
+                VStack(alignment: .leading){
+                    
+                    
+                    Text("Nama Kategori")
+                        .font(.custom("PlusJakartaSans-Medium", size: 16))
+                        .foregroundColor(Color("LightGray"))
+                        
+                    
+                    TextField("", text: $namaKategori)
+                        .autocapitalization(.none)
+                        .font(.custom("PlusJakartaSans-Medium", size: 16))
+                        .frame(width: 450, height: 38)
+                        .cornerRadius(8)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 8)
+                                .inset(by: 0.50)
+                                .stroke(Color(red: 0.93, green: 0.93, blue: 0.96), lineWidth: 0.50)
+                        )
+                        Spacer()
+                    
+                    Divider()
+                    
+                    Button{
+                        showTambahKategoriPopUp = false
+                    }label: {
+                        Text("Tambah Kategori")
+                            .font(.custom("PlusJakartaSans-SemiBold", size: 16))
+                            .foregroundColor(.white)
+                            .frame(width: 450, height: 44)
+                            .frame(height: 44)
+                            .background(Color("Green"))
+                            .cornerRadius(10)
+                            .padding(.top,10)
+                    }
+                }.padding(.horizontal)
+                
+                Spacer()
+                
+            }
+            .padding()
+            .background(.white)
+            .frame(width: 542)
+            
+            
+            
+        
     }
 }
 
 #Preview {
-    TambahKategoriPopUp()
+    TambahKategoriPopUp(showTambahKategoriPopUp: .constant(true))
 }

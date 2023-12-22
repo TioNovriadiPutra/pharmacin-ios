@@ -11,23 +11,33 @@ struct ObatDetailView: View {
     @State private var searchText: String = ""
     @State private var isPembelianObatSelected = true
     @State private var isPenjualanObatSelected = false
+    @Binding var showDetailObatView: Bool
+    @Binding var showInformasiObat:Bool
+    
+    
+    let obat:Obat
     
     var body: some View {
         NavigationStack{
-            ZStack{
-                Color(red: 0.98, green: 0.98, blue: 0.99)
-                    .ignoresSafeArea()
-                ScrollView{
-                    VStack(alignment:.leading, spacing:10){
+            GeometryReader{ geometry in
+                ZStack{
+                    Color(red: 0.98, green: 0.98, blue: 0.99)
+                        .ignoresSafeArea()
+                     
+                    HStack{
+                    VStack(alignment:.leading, spacing:14){
                         
                         HStack{
-                            Image(systemName: "arrow.left").imageScale(.large)
-                                .foregroundColor(Color("LightGray"))
+                            Button(action: {
+                                showDetailObatView = false
+                            }){
+                                Image("BackButton")
+                            }
                             
                             
                             Spacer()
                             
-                            Text("ALANGSARI PLUS JERUK MANIS SACH 6S(7 Gr)")
+                            Text("\(obat.namaObat)")
                                 .font(.custom("PlusJakartaSans-Medium", size: 16))
                                 .foregroundColor(Color("RegularText"))
                             
@@ -37,7 +47,7 @@ struct ObatDetailView: View {
                             Spacer()
                             
                             Button{
-                                ("Info Obat")
+                               showInformasiObat = true
                             }label: {
                                 Image("Info")
                             }
@@ -45,8 +55,9 @@ struct ObatDetailView: View {
                         }
                         .padding()
                         .background()
-                        .frame(width: 1098, height: 44)
+                        .frame(height: 44)
                         .cornerRadius(10)
+                        .padding(.trailing,70)
                         
                         HStack{
                             Button(action: {
@@ -87,15 +98,18 @@ struct ObatDetailView: View {
                                     .font(.custom("PlusJakartaSans-Medium", size: 16))
                                 
                                 
-                            }
+                            } 
                             
-                            .frame(width: 350, height: 44)
+                            .frame(height: 44)
+                            .frame(maxWidth: .infinity)
                             .background(Color(red: 0.94, green: 0.94, blue: 0.94))
                             .cornerRadius(10)
+                            .padding(.trailing,70)
+                           
                             
                             
                             
-                            
+                              
                             
                         }
                         
@@ -108,23 +122,28 @@ struct ObatDetailView: View {
                         
                         
                         
+                        Spacer()
                         
-                    }
-                    
-                    
-                    
+                           
+                    }.padding()
                     Spacer()
                 }
-                .padding()
+                
+                
+                
+                Spacer()
+                
+                    .padding()
             }
+        }
             }
         }
 }
 
 struct Obat_DetailView: PreviewProvider {
     static var previews: some View {
-        ObatDetailView()
-        ObatDetailView().previewInterfaceOrientation(.landscapeRight)
+        ObatDetailView(showDetailObatView: .constant(true), showInformasiObat: .constant(true), obat: Obat.obatSample)
+        ObatDetailView(showDetailObatView: .constant(true), showInformasiObat: .constant(true), obat: Obat.obatSample).previewInterfaceOrientation(.landscapeRight)
     }
 }
 

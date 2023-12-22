@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ObatKelolaItemList: View {
+    @ObservedObject var obatViewModel = ObatViewModel()
+    @Binding var showDetailObatView : Bool
+    @Binding var selectedObat: Obat?
+    
+    
     var body: some View {
         VStack {
             VStack{
@@ -16,7 +21,7 @@ struct ObatKelolaItemList: View {
                     Text("Nama Item")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 200, alignment: .leading)
+                        .frame(width: 180, alignment: .leading)
                     Spacer()
                     Text("Nama Generik")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
@@ -31,17 +36,17 @@ struct ObatKelolaItemList: View {
                     Text("Rak")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 70, alignment: .leading)
+                        .frame(width: 50, alignment: .leading)
                     Spacer()
-                    Text("Harga Beli")
+                    Text("Harga Beli") 
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 140, alignment: .leading)
+                        .frame(width: 120, alignment: .leading)
                     Spacer()
                     Text("Harga Jual")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 140, alignment: .leading)
+                        .frame(width: 120, alignment: .leading)
                     Spacer()
                     Text("Takaran")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
@@ -57,7 +62,8 @@ struct ObatKelolaItemList: View {
                 }
             }
             .padding()
-            .frame(width: 1098, height: 54)
+            .frame(height: 54)
+            .frame(width: UIScreen.main.bounds.size.width - 100)
             .background(.white)
             .cornerRadius(10)
             
@@ -65,20 +71,25 @@ struct ObatKelolaItemList: View {
             
             VStack {
                 
-                ObatKelolaItemListTable()
-                ObatKelolaItemListTable()
-                ObatKelolaItemListTable()
+                ForEach(obatViewModel.obatList, id: \.id) { obat in
+                    ObatKelolaItemListTable(showDetailObatView: $showDetailObatView, selecetedObat: $selectedObat, obat: obat)
+                }
+
                 
                 
                 Spacer()
             }
-            .frame(width: 1098, height: 684)
+            .frame(height: 684)
+            .frame(width: UIScreen.main.bounds.size.width - 100)
             .background(.white)
             .cornerRadius(10)
         }
     }
 }
 
-#Preview {
-    ObatKelolaItemList()
+struct Obat_KelolaItemList: PreviewProvider {
+    static var previews: some View {
+        ObatKelolaItemView(showDetailObatView: .constant(true), selecetedObat: .constant(nil), showTambahObatPopUp: .constant(true))
+        ObatKelolaItemView(showDetailObatView: .constant(true), selecetedObat: .constant(nil), showTambahObatPopUp: .constant(true)).previewInterfaceOrientation(.landscapeRight)
+    }
 }

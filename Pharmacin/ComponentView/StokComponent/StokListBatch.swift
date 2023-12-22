@@ -15,41 +15,42 @@ struct StokListBatch: View {
                     Text("Item")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 200, alignment: .leading)
+                        .frame(width: 140, alignment: .leading)
                     Spacer()
                     Text("Nama Pabrik")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 150, alignment: .leading)
+                        .frame(width: 140, alignment: .leading)
                     Spacer()
                     Text("Batch ID")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 150, alignment: .leading)
+                        .frame(width: 140, alignment: .leading)
                     Spacer()
                     Text("Kedaluwarsa")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 150, alignment: .leading)
+                        .frame(width: 140, alignment: .leading)
                     Spacer()
                     Text("Stok Beli")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 150, alignment: .leading)
+                        .frame(width: 140, alignment: .leading)
                     Spacer()
                     Text("Terjual")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 150, alignment: .leading)
+                        .frame(width: 140, alignment: .leading)
                     Spacer()
-                    Text("Stok")
+                    Text("Stok") 
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
                         .frame(width: 86, alignment: .leading)
                 }
             }
             .padding()
-            .frame(width: 1098, height: 54)
+            .frame(width: UIScreen.main.bounds.size.width - 100)
+            .frame(height: 54)
             .background(.white)
             .cornerRadius(10)
             
@@ -63,7 +64,8 @@ struct StokListBatch: View {
                 
                 Spacer()
             }
-            .frame(width: 1098, height: 684)
+            .frame(height: 684)
+            .frame(width: UIScreen.main.bounds.size.width - 100)
             .background(.white)
             .cornerRadius(10)
         }
@@ -72,8 +74,8 @@ struct StokListBatch: View {
 
 struct StokListBatch_Preview: PreviewProvider {
     static var previews: some View {
-        StokListBatch()
-        StokListBatch().previewInterfaceOrientation(.landscapeRight)
+        StokView()
+        StokView().previewInterfaceOrientation(.landscapeRight)
         
     }
 }

@@ -9,10 +9,36 @@ import SwiftUI
 
 struct ManajemenRiwayattKasirListTable: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text("DD-MM-YYYY")
+                .font(.custom("PlusJakartaSans-Regular", size: 14))
+                .foregroundColor(Color("RegularText"))
+                .frame(width: 200, alignment: .leading)
+            Spacer()
+            Text("Lorem Ipsum")
+                .font(.custom("PlusJakartaSans-Regular", size: 14))
+                .foregroundColor(Color("RegularText"))
+                .frame(width: 200, alignment: .leading)
+            Spacer()
+            Text("00.00")
+                .font(.custom("PlusJakartaSans-Regular", size: 14))
+                .foregroundColor(Color("RegularText"))
+                .frame(width: 200, alignment: .leading)
+            Spacer()
+            Text("00.00")
+                .font(.custom("PlusJakartaSans-Regular", size: 14))
+                .foregroundColor(Color("RegularText"))
+                .frame(width: 100, alignment: .leading)
+            
+        }
+        .padding()
     }
 }
 
-#Preview {
-    ManajemenRiwayattKasirListTable()
+struct ManajemenRiwayatKasirListTable_Preview: PreviewProvider {
+    static var previews: some View {
+        ManajemenRiwayatKasirView()
+        ManajemenRiwayatKasirView().previewInterfaceOrientation(.landscapeRight)
+        
+    }
 }

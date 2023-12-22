@@ -11,18 +11,22 @@ struct TambahPabrikPopUp: View {
     @State private var namaPabrik: String = ""
     @State private var email: String = ""
     @State private var noTelepon: String = ""
+    @Binding var showTambahPabrikPopUp : Bool
     
     var body: some View {
             VStack(alignment: .center){
                 Spacer()
                 HStack{
-                    Image(systemName: "arrow.left").imageScale(.large)
-                        .foregroundColor(Color("LightGray"))
-                        .padding(.leading,20)
+                    Button {
+                        showTambahPabrikPopUp = false
+                    } label: {
+                        Image("BackButton")
+                            .padding(.leading,20)
+                    }
                     
-                    Text("Tambah Obat")
+                    Text("Tambah Pabrik")
                         .font(.custom("PlusJakartaSans-Bold", size: 24))
-                        .padding(.leading,120)
+                        .padding(.leading,90)
                     
                     Spacer()
                 }
@@ -83,9 +87,9 @@ struct TambahPabrikPopUp: View {
                     Divider()
                     
                     Button{
-                        print("Tambah Obat")
+                        showTambahPabrikPopUp = false
                     }label: {
-                        Text("Tambah Obat")
+                        Text("Tambah Pabrik")
                             .font(.custom("PlusJakartaSans-SemiBold", size: 16))
                             .foregroundColor(.white)
                             .frame(width: 450, height: 44)
@@ -102,9 +106,6 @@ struct TambahPabrikPopUp: View {
             .padding()
             .background(.white)
             .frame(width: 542)
-            
-            
-            
         
     }
 
@@ -112,7 +113,7 @@ struct TambahPabrikPopUp: View {
 
 struct Tambah_PabrikView: PreviewProvider {
     static var previews: some View {
-        TambahPabrikPopUp()
-        TambahPabrikPopUp().previewInterfaceOrientation(.landscapeRight)
+        TambahPabrikPopUp(showTambahPabrikPopUp: .constant(true))
+        TambahPabrikPopUp(showTambahPabrikPopUp: .constant(true)).previewInterfaceOrientation(.landscapeRight)
     }
 }

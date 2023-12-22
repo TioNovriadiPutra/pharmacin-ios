@@ -13,11 +13,12 @@ struct StokOpnameView: View {
     var body: some View {
         
         NavigationStack{
+            GeometryReader { geometry in
             ZStack{
                 Color(red: 0.98, green: 0.98, blue: 0.99)
                     .ignoresSafeArea()
-                VStack{
-                    HStack{
+                VStack(alignment:.leading){
+                    HStack(spacing:14){
                         Text("Stok")
                             .font(.custom("PlusJakartaSans-Bold", size: 24))
                             .foregroundColor(Color("Subtitle"))
@@ -25,7 +26,7 @@ struct StokOpnameView: View {
                             .font(.custom("PlusJakartaSans-SemiBold", size: 16))
                             .foregroundColor(Color("LightGray"))
                         Spacer()
-                    
+                        
                         HStack {
                             Image(systemName: "magnifyingglass")
                                 .foregroundColor(.gray)
@@ -40,8 +41,7 @@ struct StokOpnameView: View {
                         .frame(width: 350, height: 44)
                         .background(Color(red: 0.94, green: 0.94, blue: 0.94))
                         .cornerRadius(10)
-                        .padding()
-                        
+                        .padding(.trailing,70)
                     }
                     
                     StokOpnameList()
@@ -49,6 +49,7 @@ struct StokOpnameView: View {
                 }
                 .padding()
             }
+        }
         }
     }
 }

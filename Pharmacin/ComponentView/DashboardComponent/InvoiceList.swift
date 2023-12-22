@@ -19,7 +19,9 @@ struct InvoiceList: View {
                 .font(.custom("PlusJakartaSans-Regular", size: 14))
                 .foregroundColor(Color("RegularText"))
                 .frame(width: 150, alignment: .leading)
-        }.padding()
+        }
+        .padding()
+        .frame(width: UIScreen.main.bounds.size.width * 0.5 - 85)
     }
 }
 

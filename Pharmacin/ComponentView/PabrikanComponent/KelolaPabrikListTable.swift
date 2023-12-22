@@ -8,29 +8,39 @@
 import SwiftUI
 
 struct KelolaPabrikListTable: View {
+    @Binding var showDetailPabrikView: Bool
+    @Binding var selecetedPabrik: Pabrikan?
+    let pabrikan: Pabrikan
+    
     var body: some View {
         HStack {
-           
-            Text("00000")
-                .font(.custom("PlusJakartaSans-Regular", size: 14))
-                .foregroundColor(Color("RegularText"))
-                .frame(width: 100, alignment: .leading)
-            Spacer()
-            Text("Lorem Ipsum")
-                .font(.custom("PlusJakartaSans-Regular", size: 14))
-                .foregroundColor(Color("RegularText"))
-                .frame(width: 200, alignment: .leading)
-            Spacer()
-            Text("Loremipsum@gmail.com")
-                .font(.custom("PlusJakartaSans-Regular", size: 14))
-                .foregroundColor(Color("RegularText"))
-                .frame(width: 185, alignment: .leading)
-            Spacer()
-            Text("02184974245")
-                .font(.custom("PlusJakartaSans-Regular", size: 14))
-                .foregroundColor(Color("RegularText"))
-                .frame(width: 150, alignment: .leading)
-            Spacer()
+            Button{
+                showDetailPabrikView = true
+                selecetedPabrik = pabrikan
+               
+            }label: {
+                Text("\(pabrikan.id)")
+                    .font(.custom("PlusJakartaSans-Regular", size: 14))
+                    .foregroundColor(Color("RegularText"))
+                    .frame(width: 100, alignment: .leading)
+                Spacer()
+                Text("\(pabrikan.clinic_name)")
+                    .font(.custom("PlusJakartaSans-Regular", size: 14))
+                    .foregroundColor(Color("RegularText"))
+                    .frame(width: 200, alignment: .leading)
+                Spacer()
+                Text("\(pabrikan.clinic_phone)")
+                    .font(.custom("PlusJakartaSans-Regular", size: 14))
+                    .foregroundColor(Color("RegularText"))
+                    .frame(width: 185, alignment: .leading)
+                Spacer()
+                Text("\(pabrikan.clinic_phone)")
+                    .font(.custom("PlusJakartaSans-Regular", size: 14))
+                    .foregroundColor(Color("RegularText"))
+                    .frame(width: 150, alignment: .leading)
+                Spacer()
+            }
+
             HStack{
                 Button{
                     print("Check")
@@ -52,8 +62,12 @@ struct KelolaPabrikListTable: View {
         }
         .padding()
     }
+    
+    
 }
 
-#Preview {
-    KelolaPabrikListTable()
-}
+
+
+//#Preview {
+//    KelolaPabrikListTable(showDetailPabrikView: .constant(true), selecetedPabrik: .constant(nil), pabrikan:  Pabrikan(id: "1", namaPabrik: "PabrikA", email: "pabrikA@gmail.com", nomorTelepon: "123456788"))
+//}

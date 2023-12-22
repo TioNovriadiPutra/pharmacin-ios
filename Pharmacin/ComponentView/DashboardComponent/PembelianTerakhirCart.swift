@@ -37,7 +37,8 @@ struct PembelianTerakhirCart: View {
                         .frame(width: 150, alignment: .leading)
                 }
                 .padding()
-                .frame(width: 514, height: 54)
+                .frame(height: 54)
+                .frame(width: UIScreen.main.bounds.size.width * 0.5 - 85)
                 .background(Color(red: 0.98, green: 0.98, blue: 0.99))
                 .cornerRadius(10)
                 
@@ -49,7 +50,8 @@ struct PembelianTerakhirCart: View {
                 
             }
             .padding()
-            .frame(width: 542, height: 304)
+            .frame(height:304)
+            .frame(width: UIScreen.main.bounds.size.width * 0.5 - 60)
             .background(Color(.white))
             .cornerRadius(10)
         }

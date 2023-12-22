@@ -13,7 +13,7 @@ struct StokOpnameDetailListTable: View {
             Text("xxxxxx")
                 .font(.custom("PlusJakartaSans-Regular", size: 14))
                 .foregroundColor(Color("RegularText"))
-                .frame(width: 182, alignment: .leading)
+                .frame(width: 150, alignment: .leading)
             Spacer()
             Text("DD-MM-YYYY")
                 .font(.custom("PlusJakartaSans-Regular", size: 14))

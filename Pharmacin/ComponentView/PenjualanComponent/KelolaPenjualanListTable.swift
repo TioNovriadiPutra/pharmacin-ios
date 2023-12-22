@@ -50,6 +50,7 @@ struct KelolaPenjualanListTable: View {
             .frame(width: 120, alignment: .center)
             Spacer()
         }
+        
         .padding()
     }
 }

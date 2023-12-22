@@ -42,7 +42,8 @@ struct StokRiwayatOpnameList: View {
                 }
             }
             .padding()
-            .frame(width: 1098, height: 54)
+            .frame(height: 54)
+            .frame(width: UIScreen.main.bounds.size.width - 100)
             .background(.white)
             .cornerRadius(10)
             
@@ -57,7 +58,8 @@ struct StokRiwayatOpnameList: View {
                 
                 Spacer()
             }
-            .frame(width: 1098, height: 684)
+            .frame(height: 684)
+            .frame(width: UIScreen.main.bounds.size.width - 100)
             .background(.white)
             .cornerRadius(10)
         }

@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+
+class ObatViewModel: ObservableObject {
+    @Published var obatList: [Obat] = Obat.all
+}

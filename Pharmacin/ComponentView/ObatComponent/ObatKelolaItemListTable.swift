@@ -8,44 +8,53 @@
 import SwiftUI
 
 struct ObatKelolaItemListTable: View {
+    @Binding var showDetailObatView : Bool
+    @Binding var selecetedObat: Obat?
+    let obat: Obat
+    
     var body: some View {
         HStack {
-            Spacer()
-            Text("Alangsari Plus")
-                .font(.custom("PlusJakartaSans-Regular", size: 14))
-                .foregroundColor(Color("RegularText"))
-                .frame(width: 200, alignment: .leading)
-            Spacer()
-            Text("Lorem Ipsum")
-                .font(.custom("PlusJakartaSans-Regular", size: 14))
-                .foregroundColor(Color("RegularText"))
-                .frame(width: 180, alignment: .leading)
-            Spacer()
-            Text("Lorem Ipsum")
-                .font(.custom("PlusJakartaSans-Regular", size: 14))
-                .foregroundColor(Color("RegularText"))
-                .frame(width: 120, alignment: .leading)
-            Spacer()
-            Text("2")
-                .font(.custom("PlusJakartaSans-Regular", size: 14))
-                .foregroundColor(Color("RegularText"))
-                .frame(width: 70, alignment: .leading)
-            Spacer()
-            Text("222.000.000")
-                .font(.custom("PlusJakartaSans-Regular", size: 14))
-                .foregroundColor(Color("RegularText"))
-                .frame(width: 140, alignment: .leading)
-            Spacer()
-            Text("222.000.000")
-                .font(.custom("PlusJakartaSans-Regular", size: 14))
-                .foregroundColor(Color("RegularText"))
-                .frame(width: 140, alignment: .leading)
-            Spacer()
-            Text("125ml")
-                .font(.custom("PlusJakartaSans-Regular", size: 14))
-                .foregroundColor(Color("RegularText"))
-                .frame(width: 100, alignment: .leading)
-            Spacer()
+            Button(action: {
+                showDetailObatView = true
+                selecetedObat = obat
+            }){
+                Spacer()
+                Text("\(obat.namaObat)")
+                    .font(.custom("PlusJakartaSans-Regular", size: 14))
+                    .foregroundColor(Color("RegularText"))
+                    .frame(width: 180, alignment: .leading)
+                Spacer()
+                Text("\(obat.namaGenerik)")
+                    .font(.custom("PlusJakartaSans-Regular", size: 14))
+                    .foregroundColor(Color("RegularText"))
+                    .frame(width: 180, alignment: .leading)
+                Spacer()
+                Text("\(obat.Kategori)")
+                    .font(.custom("PlusJakartaSans-Regular", size: 14))
+                    .foregroundColor(Color("RegularText"))
+                    .frame(width: 120, alignment: .leading)
+                Spacer()
+                Text("\(obat.Rak)")
+                    .font(.custom("PlusJakartaSans-Regular", size: 14))
+                    .foregroundColor(Color("RegularText"))
+                    .frame(width: 50, alignment: .leading)
+                Spacer()
+                Text("\(obat.HargaBeli)")
+                    .font(.custom("PlusJakartaSans-Regular", size: 14))
+                    .foregroundColor(Color("RegularText"))
+                    .frame(width: 120, alignment: .leading)
+                Spacer()
+                Text("\(obat.HargaJual)")
+                    .font(.custom("PlusJakartaSans-Regular", size: 14))
+                    .foregroundColor(Color("RegularText"))
+                    .frame(width: 120, alignment: .leading)
+                Spacer()
+                Text("\(obat.Takaran)")
+                    .font(.custom("PlusJakartaSans-Regular", size: 14))
+                    .foregroundColor(Color("RegularText"))
+                    .frame(width: 100, alignment: .leading)
+                Spacer()
+            }
             HStack{
                 Button{
                     print("Check")
@@ -70,5 +79,5 @@ struct ObatKelolaItemListTable: View {
 }
 
 #Preview {
-    ObatKelolaItemListTable()
+    ObatKelolaItemListTable(showDetailObatView: .constant(true), selecetedObat: .constant(nil), obat: Obat.obatSample)
 }

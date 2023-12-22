@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct KelolaPabrikList: View {
+    @StateObject var pabrikanViewModel = PabrikanViewModel()
+    @Binding var showDetailPabrikView : Bool
+    @Binding var selectedPabrikan: Pabrikan?
+    
     var body: some View {
+        
         VStack {
             VStack{
                 HStack {
@@ -40,7 +45,8 @@ struct KelolaPabrikList: View {
                 }
             }
             .padding()
-            .frame(width: 1098, height: 54)
+            .frame(height: 54)
+            .frame(width: UIScreen.main.bounds.size.width - 100)
             .background(.white)
             .cornerRadius(10)
             
@@ -48,20 +54,29 @@ struct KelolaPabrikList: View {
             
             VStack {
                 
-                KelolaPabrikListTable()
-                KelolaPabrikListTable()
-                KelolaPabrikListTable()
-                
-                
-                Spacer()
+                if pabrikanViewModel.pabrikan.count > 0 {
+                    ScrollView {
+                        ForEach(pabrikanViewModel.pabrikan, id: \.id) { pabrikan in
+                            KelolaPabrikListTable(
+                                showDetailPabrikView: $showDetailPabrikView,
+                                selecetedPabrik: $selectedPabrikan,
+                                pabrikan: pabrikan
+                            )
+                        }
+                        Spacer()
+                    }
+                }
             }
-            .frame(width: 1098, height: 684)
+            .frame(height: 684)
+            .frame(width: UIScreen.main.bounds.size.width - 100)
             .background(.white)
             .cornerRadius(10)
+        }.onAppear {
+            pabrikanViewModel.getAllPabrik()
         }
     }
 }
 
 #Preview {
-    KelolaPabrikList()
+    KelolaPabrikList(showDetailPabrikView: .constant(true), selectedPabrikan: .constant(nil))
 }

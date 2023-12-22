@@ -13,7 +13,7 @@ struct StokOpnameListTable: View {
             Text("ALANGSARI")
                 .font(.custom("PlusJakartaSans-Regular", size: 14))
                 .foregroundColor(Color("RegularText"))
-                .frame(width: 182, alignment: .leading)
+                .frame(width: 150, alignment: .leading)
             Spacer()
             Text("Lorem Ipsum")
                 .font(.custom("PlusJakartaSans-Regular", size: 14))

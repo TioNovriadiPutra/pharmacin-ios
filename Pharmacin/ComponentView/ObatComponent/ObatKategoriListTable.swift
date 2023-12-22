@@ -21,6 +21,8 @@ struct ObatKategoriListTable: View {
                 .foregroundColor(Color("RegularText"))
                 .frame(width: 200, alignment: .leading)
             Spacer()
+            
+            
             HStack{
                 Button{
                     print("Check")

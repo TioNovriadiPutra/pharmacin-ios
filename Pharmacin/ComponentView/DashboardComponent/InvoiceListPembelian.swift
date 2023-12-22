@@ -21,6 +21,7 @@ struct InvoiceListPembelian: View {
                 .frame(width: 150, alignment: .leading)
             
         }.padding()
+        .frame(width: UIScreen.main.bounds.size.width * 0.5 - 85)
     }
 }
 

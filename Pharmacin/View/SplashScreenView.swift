@@ -9,10 +9,19 @@ import SwiftUI
 
 struct SplashScreenView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("SplashScreen")
+            .resizable()
+            .frame(maxWidth: .infinity)
+            .frame(maxHeight: .infinity)
+            .ignoresSafeArea()
+            
     }
 }
 
-#Preview {
-    SplashScreenView()
+struct SplashScreen_Preview: PreviewProvider {
+    static var previews: some View {
+        SplashScreenView()
+        SplashScreenView().previewInterfaceOrientation(.landscapeRight)
+        
+    }
 }

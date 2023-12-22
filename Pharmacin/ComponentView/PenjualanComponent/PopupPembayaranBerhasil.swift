@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct PopupBerhasil: View {
+    @Binding var showSelesaiPembayaranPopup: Bool
+    
     var body: some View {
         VStack{
             HStack{
                 
-                Image(systemName: "arrow.left").imageScale(.large)
-                    .foregroundColor(Color("LightGray"))
+                Image("BackButton")
                     .padding(.leading,20)
                 
                 Text("Konfirmasi Penjualan")
                     .font(.custom("PlusJakartaSans-Bold", size: 24))
-                    .padding(.leading,100)
+                    .padding(.leading,90)
                 
                 Spacer()
             }
@@ -49,7 +50,7 @@ struct PopupBerhasil: View {
             Divider()
             
             Button{
-               ("Test")
+                showSelesaiPembayaranPopup = true
             }label: {
                 Text("Tambah Penjualan")
                     .font(.custom("PlusJakartaSans-SemiBold", size: 16))
@@ -71,5 +72,5 @@ struct PopupBerhasil: View {
 }
 
 #Preview {
-    PopupBerhasil()
+    PopupBerhasil(showSelesaiPembayaranPopup: .constant(true))
 }

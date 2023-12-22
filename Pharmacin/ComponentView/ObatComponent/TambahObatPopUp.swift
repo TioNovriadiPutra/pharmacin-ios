@@ -24,13 +24,19 @@ struct TambahObatPopUp: View {
     let kategoriList = ["Red", "Green", "Blue", "Black", "Tartan"]
     let pabrikanList = ["Red", "Green", "Blue", "Black", "Tartan"]
     
+    @Binding var showTambahObatPopUp : Bool
+    
     var body: some View {
             VStack(alignment: .center){
                 Spacer()
                 HStack{
-                    Image(systemName: "arrow.left").imageScale(.large)
-                        .foregroundColor(Color("LightGray"))
-                        .padding(.leading,20)
+                    Button(action: {
+                        showTambahObatPopUp = false
+                    }){
+                        Image(systemName: "arrow.left").imageScale(.large)
+                            .foregroundColor(Color("LightGray"))
+                            .padding(.leading,20)
+                    }
                     
                     Text("Tambah Obat")
                         .font(.custom("PlusJakartaSans-Bold", size: 24))
@@ -218,7 +224,7 @@ struct TambahObatPopUp: View {
                     Divider()
                     
                     Button{
-                        print("Tambah Obat")
+                        showTambahObatPopUp = false
                     }label: {
                         Text("Tambah Obat")
                             .font(.custom("PlusJakartaSans-SemiBold", size: 16))
@@ -245,5 +251,5 @@ struct TambahObatPopUp: View {
 }
 
 #Preview {
-    TambahObatPopUp()
+    TambahObatPopUp(showTambahObatPopUp: .constant(true))
 }

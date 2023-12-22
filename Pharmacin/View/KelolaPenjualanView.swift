@@ -9,27 +9,30 @@ import SwiftUI
 
 struct KelolaPenjualanView: View {
     @State private var searchText: String = ""
+    @Binding var showTambahPenjualanView: Bool
+    @Binding var showKelolaPenjualanView: Bool
     
     var body: some View {
         NavigationStack{
-            ZStack{
+            GeometryReader { geometry in
+            ZStack{ 
                 Color(red: 0.98, green: 0.98, blue: 0.99)
                     .ignoresSafeArea()
-                
-                ScrollView{
-                    VStack(alignment:.leading, spacing:9){
-                        Spacer()
-                        HStack{
+     
+                    VStack(alignment:.leading, spacing:14){
+                        HStack(spacing:14){
                             Text("Penjualan")
                                 .font(.custom("PlusJakartaSans-Bold", size: 24))
                                 .foregroundColor(Color("Subtitle"))
                             Text("/ Kelola Penjualan")
                                 .font(.custom("PlusJakartaSans-SemiBold", size: 16))
                                 .foregroundColor(Color("LightGray"))
-                           
-
+                            
+                            Spacer()
+                            
                             Button{
-                                ("Tambah Penjualan")
+                                showTambahPenjualanView = true
+                                showKelolaPenjualanView = false
                             }label: {
                                 Text("Tambah Penjualan")
                                     .font(.custom("PlusJakartaSans-SemiBold", size: 16))
@@ -38,9 +41,9 @@ struct KelolaPenjualanView: View {
                                     .background(Color("Green"))
                                     .cornerRadius(10)
                             }
-                            .padding(.leading,250)
-                            .padding(.trailing,5)
-                             
+                            
+                            
+                            
                             
                             HStack {
                                 Image(systemName: "magnifyingglass")
@@ -56,6 +59,8 @@ struct KelolaPenjualanView: View {
                             .frame(width: 350, height: 44)
                             .background(Color(red: 0.94, green: 0.94, blue: 0.94))
                             .cornerRadius(10)
+                            
+                            .padding(.trailing,70)
                         }
                         
                         HStack{
@@ -63,17 +68,20 @@ struct KelolaPenjualanView: View {
                             Spacer()
                         }
                         
+                        Spacer()
                     }
                     .padding()
-                }
+                
             }
+        }
         }
     }
 }
 
 struct Kelola_PenjualanView: PreviewProvider {
     static var previews: some View {
-        KelolaPenjualanView()
-        KelolaPenjualanView().previewInterfaceOrientation(.landscapeRight)
+        KelolaPenjualanView(showTambahPenjualanView: .constant(true), showKelolaPenjualanView: .constant(true))
+        KelolaPenjualanView(showTambahPenjualanView: .constant(true), showKelolaPenjualanView: .constant(true)).previewInterfaceOrientation(.landscapeRight)
     }
 }
+ 

@@ -10,47 +10,56 @@ import SwiftUI
 struct StokOpnameDetailView: View {
     var body: some View {
         NavigationStack{
-            ZStack{
-                Color(red: 0.98, green: 0.98, blue: 0.99)
-                    .ignoresSafeArea()
-                VStack{
-                                    
+            GeometryReader { geometry in
+                ZStack{
+                    Color(red: 0.98, green: 0.98, blue: 0.99)
+                        .ignoresSafeArea()
+                    
                     HStack{
-                        Image(systemName: "arrow.left").imageScale(.large)
-                            .foregroundColor(Color("LightGray"))
+                    VStack(alignment: .leading){
+                        
+                        HStack{
+                            Image("BackButton")
                             
+                            
+                            Spacer()
+                            
+                            Text("ALANGSARI PLUS")
+                                .font(.custom("PlusJakartaSans-Medium", size: 16))
+                                .foregroundColor(Color("RegularText"))
+                            
+                            
+                            Text("(Stock Opname)")
+                                .font(.custom("PlusJakartaSans-Medium", size: 16))
+                                .foregroundColor(Color("LightGray"))
+                            
+                            Spacer()
+                            
+                            Image("CheckGreen")
+                            
+                        }
+                        .padding()
+                        .background()
+                        .frame(height: 44)
+                        .frame(width: UIScreen.main.bounds.size.width - 100)
+                        .cornerRadius(10)
+                        
+                        
+                        StokOpnameDetailList()
                         
                         Spacer()
                         
-                        Text("ALANGSARI PLUS")
-                            .font(.custom("PlusJakartaSans-Medium", size: 16))
-                            .foregroundColor(Color("RegularText"))
-                            
-                        
-                        Text("(Stock Opname)")
-                            .font(.custom("PlusJakartaSans-Medium", size: 16))
-                            .foregroundColor(Color("LightGray"))
-                        
-                        Spacer()
-                        
-                        Image("CheckGreen")
-                            
-                    }
-                    .padding()
-                    .background()
-                    .frame(width: 1098, height: 44)
-                    .cornerRadius(10)
-                    
-                    
-                    StokOpnameDetailList()
-                        
                         
                     }
-                    
-                
                     Spacer()
                 }
+                
+                
+               
                 .padding()
+            }
+            
+        }
             }
         }
     }

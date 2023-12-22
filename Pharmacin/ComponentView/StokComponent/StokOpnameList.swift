@@ -9,13 +9,13 @@ import SwiftUI
 
 struct StokOpnameList: View {
     var body: some View {
-        VStack {
+        VStack (alignment: .leading){
             VStack{
                 HStack {
                     Text("Item")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
-                        .frame(width: 182, alignment: .leading)
+                        .frame(width: 150, alignment: .leading)
                     Spacer()
                     Text("Kategori")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
@@ -44,7 +44,8 @@ struct StokOpnameList: View {
                 }
             }
             .padding()
-            .frame(width: 1098, height: 54)
+            .frame(height: 54)
+            .frame(width: UIScreen.main.bounds.size.width - 100)
             .background(.white)
             .cornerRadius(10)
             
@@ -57,7 +58,8 @@ struct StokOpnameList: View {
                 
                 Spacer()
             }
-            .frame(width: 1098, height: 684)
+            .frame(height: 684)
+            .frame(width: UIScreen.main.bounds.size.width - 100)
             .background(.white)
             .cornerRadius(10)
         }

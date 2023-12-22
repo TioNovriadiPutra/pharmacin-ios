@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Klinik: Codable{
+    let id: Int
+    let clinic_name: String
+    let clinic_phone: String
+    let cashier_status: Bool
+}

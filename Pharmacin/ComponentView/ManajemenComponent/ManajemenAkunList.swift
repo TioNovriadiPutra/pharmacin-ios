@@ -54,11 +54,11 @@ struct ManajemenAkunList: View {
     }
 }
 
-struct ManajemenAkunList_Preview: PreviewProvider {
-    static var previews: some View {
-        ManajemenAkunView()
-        ManajemenAkunView().previewInterfaceOrientation(.landscapeRight)
-        
-    }
-}
+//struct ManajemenAkunList_Preview: PreviewProvider {
+//    static var previews: some View {
+//        ManajemenAkunView()
+//        ManajemenAkunView().previewInterfaceOrientation(.landscapeRight)
+//        
+//    }
+//}
 

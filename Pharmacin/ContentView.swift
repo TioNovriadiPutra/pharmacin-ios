@@ -59,6 +59,8 @@ struct ContentView: View {
     @State private var isManajemenKlinikMenu = false
     @State private var isManajemenKaryawanSubMenu = false
     @State private var isManajemenRiwayatKasirSubMenu = false
+    @State private var showTambahAkunPopUp = false
+    @State private var showEditInfoKlinikPopUp = false
     
     
     @State private var isTransaksiBaruSubMenu = false
@@ -1722,7 +1724,44 @@ struct ContentView: View {
                     }
                     
                     if isManajemenKlinikMenu{
-                        ManajemenKlinikView()
+                        ManajemenKlinikView(showEditInfoKlinikPopUp: $showEditInfoKlinikPopUp)
+                            .zIndex(-2)
+                            .frame(maxWidth: .infinity)
+                            .offset(x : 69)
+                            .overlay(
+                                Color.black.opacity(isExpanded ? 0.4 : 0) 
+                            )
+                            .onTapGesture{
+                                isExpanded = false
+                                isStokSubMenuVisible = false
+                                isPenjualanSubMenuVisible = false
+                                isObatSubMenuVisible = false
+                                isPembelianSubMenuVisible = false
+                                isBukuBesarSubMenuVisible = false
+                                isManajemenSubMenuVisible = false
+                                isOptionSubMenuVisible = false
+                            }
+                        
+                        if showEditInfoKlinikPopUp {
+                            ZStack {
+                                // Background color with opacity
+                                Color.black.opacity(0.4)
+                                    .edgesIgnoringSafeArea(.all)
+                                
+                                // Popup content
+                                HStack {
+                                    // Your pop-up content here
+                                    EditInfoKlinikPopUp(showEditInfoKlinikPopUp: $showEditInfoKlinikPopUp)
+                                    Spacer()
+                                }
+                                
+                            }
+                        }
+                        
+                    }
+                    
+                    if isManajemenKaryawanSubMenu{
+                        ManajemenAkunView(showTambahAkunPopUp: $showTambahAkunPopUp)
                             .zIndex(-2)
                             .frame(maxWidth: .infinity)
                             .offset(x : 69)
@@ -1740,26 +1779,21 @@ struct ContentView: View {
                                 isOptionSubMenuVisible = false
                             }
                         
-                    }
-                    
-                    if isManajemenKaryawanSubMenu{
-                       ManajemenAkunView()
-                            .zIndex(-2)
-                            .frame(maxWidth: .infinity)
-                            .offset(x : 69)
-                            .overlay(
-                                Color.black.opacity(isExpanded ? 0.4 : 0)
-                            )
-                            .onTapGesture{
-                                isExpanded = false
-                                isStokSubMenuVisible = false
-                                isPenjualanSubMenuVisible = false
-                                isObatSubMenuVisible = false
-                                isPembelianSubMenuVisible = false
-                                isBukuBesarSubMenuVisible = false
-                                isManajemenSubMenuVisible = false
-                                isOptionSubMenuVisible = false
+                        if showTambahAkunPopUp {
+                            ZStack {
+                                // Background color with opacity
+                                Color.black.opacity(0.4)
+                                    .edgesIgnoringSafeArea(.all)
+                                
+                                // Popup content
+                                HStack {
+                                    // Your pop-up content here
+                                    TambahAkunPopUp(showTambahAkunPopUp: $showTambahAkunPopUp)
+                                    Spacer()
+                                }
+                                
                             }
+                        }
                         
                     }
                     

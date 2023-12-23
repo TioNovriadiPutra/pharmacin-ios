@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ManajemenKlinikView: View {
     @State private var searchText: String = ""
+    @Binding var showEditInfoKlinikPopUp: Bool
 
     
     var body: some View {
@@ -30,9 +31,9 @@ struct ManajemenKlinikView: View {
                             .foregroundColor(Color("LightGray"))
                         
                         Spacer()
-                        
-                        Button{
                             
+                        Button{
+                            showEditInfoKlinikPopUp = true
                         }label: {
                             Text("Edit Informasi")
                                 .font(.custom("PlusJakartaSans-SemiBold", size: 16))
@@ -127,8 +128,8 @@ struct ManajemenKlinikView: View {
 
 struct ManajemenKlinik_Preview: PreviewProvider {
     static var previews: some View {
-        ManajemenKlinikView()
-        ManajemenKlinikView().previewInterfaceOrientation(.landscapeRight)
+        ManajemenKlinikView(showEditInfoKlinikPopUp: .constant(true))
+        ManajemenKlinikView(showEditInfoKlinikPopUp: .constant(true)).previewInterfaceOrientation(.landscapeRight)
         
     }
 }

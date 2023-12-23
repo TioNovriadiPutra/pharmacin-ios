@@ -12,7 +12,7 @@ struct ManajemenAkunView: View {
 //    @Binding  var showDetailPabrik : Bool
 //    @Binding var selecetedPabrik: Pabrikan?
 //    @Binding var showTambahPabrikPopUp : Bool
-    
+    @Binding var showTambahAkunPopUp: Bool
     
     var body: some View {
         NavigationStack{
@@ -33,6 +33,7 @@ struct ManajemenAkunView: View {
                         
                         Button{
 //                            showTambahPabrikPopUp = true
+                            showTambahAkunPopUp = true
                         }label: {
                             Text("Tambah Akun")
                                 .font(.custom("PlusJakartaSans-SemiBold", size: 16))
@@ -79,8 +80,8 @@ struct ManajemenAkunView: View {
 
 struct ManajemenAkun_Preview: PreviewProvider {
     static var previews: some View {
-        ManajemenAkunView()
-        ManajemenAkunView().previewInterfaceOrientation(.landscapeRight)
+        ManajemenAkunView(showTambahAkunPopUp: .constant(true))
+        ManajemenAkunView(showTambahAkunPopUp: .constant(true)).previewInterfaceOrientation(.landscapeRight)
         
     }
 }

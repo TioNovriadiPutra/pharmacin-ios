@@ -39,6 +39,7 @@
 		16C962D02B34595D0030D081 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C962CF2B34595D0030D081 /* Webservice.swift */; };
 		16C962D22B345A0D0030D081 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C962D12B345A0D0030D081 /* LoginViewModel.swift */; };
 		16C962D42B35A0440030D081 /* KlinikModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C962D32B35A0440030D081 /* KlinikModel.swift */; };
+		16C962D62B36D10B0030D081 /* EditInfoKlinikPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C962D52B36D10B0030D081 /* EditInfoKlinikPopUp.swift */; };
 		16F069B42B11D969005569A6 /* DashboardCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069B32B11D969005569A6 /* DashboardCart.swift */; };
 		16F069B72B11DE31005569A6 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069B62B11DE31005569A6 /* DashboardView.swift */; };
 		16F069B92B11F12D005569A6 /* PenjualanTerakhirCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069B82B11F12D005569A6 /* PenjualanTerakhirCart.swift */; };
@@ -145,6 +146,7 @@
 		16C962CF2B34595D0030D081 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		16C962D12B345A0D0030D081 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		16C962D32B35A0440030D081 /* KlinikModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlinikModel.swift; sourceTree = "<group>"; };
+		16C962D52B36D10B0030D081 /* EditInfoKlinikPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInfoKlinikPopUp.swift; sourceTree = "<group>"; };
 		16F069B32B11D969005569A6 /* DashboardCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCart.swift; sourceTree = "<group>"; };
 		16F069B62B11DE31005569A6 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		16F069B82B11F12D005569A6 /* PenjualanTerakhirCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenjualanTerakhirCart.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				16C962872B30DD330030D081 /* TambahAkunPopUp.swift */,
 				16C9628B2B30E26B0030D081 /* ManajemenRiwayatKasirList.swift */,
 				16C9628D2B30E2840030D081 /* ManajemenRiwayattKasirListTable.swift */,
+				16C962D52B36D10B0030D081 /* EditInfoKlinikPopUp.swift */,
 			);
 			path = ManajemenComponent;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				16F06A792B221209005569A6 /* KonfirmasiPembelianPopUp.swift in Sources */,
 				16F06A662B21ECA2005569A6 /* KelolaPabrikListTable.swift in Sources */,
 				163E184F2B29A94500D9721D /* TambahPenjualanListTable.swift in Sources */,
+				16C962D62B36D10B0030D081 /* EditInfoKlinikPopUp.swift in Sources */,
 				16F06A742B21F5C4005569A6 /* InformasiPabrikPopUp.swift in Sources */,
 				16F069B42B11D969005569A6 /* DashboardCart.swift in Sources */,
 				16F069BB2B11FF72005569A6 /* InvoiceList.swift in Sources */,

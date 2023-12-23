@@ -43,11 +43,11 @@ struct ManajemenAkunListTable: View {
         .padding()
     }}
 
-struct ManajemenAkunListTable_Preview: PreviewProvider {
-    static var previews: some View {
-        ManajemenAkunView()
-        ManajemenAkunView().previewInterfaceOrientation(.landscapeRight)
-        
-    }
-}
+//struct ManajemenAkunListTable_Preview: PreviewProvider {
+//    static var previews: some View {
+//        ManajemenAkunView()
+//        ManajemenAkunView().previewInterfaceOrientation(.landscapeRight)
+//        
+//    }
+//}
 

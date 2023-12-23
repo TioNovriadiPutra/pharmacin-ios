@@ -52,7 +52,7 @@ struct KonfirmasiPembelianPopUp: View {
             Button{
                showKelolaPembelian = true
             }label: {
-                Text("Tambah Penjualan")
+                Text("Tambah Pembelian")
                     .font(.custom("PlusJakartaSans-SemiBold", size: 16))
                     .foregroundColor(.white)
                     .frame(width: 450, height: 44)

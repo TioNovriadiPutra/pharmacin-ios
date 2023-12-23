@@ -13,14 +13,14 @@ struct TambahAkunPopUp: View {
     @State private var password: String = ""
     @State private var konfirmasiPassword: String = ""
     @State private var isSecured: Bool = true
-//    @Binding var showTambahKategoriPopUp: Bool
+    @Binding var showTambahAkunPopUp: Bool
    
     var body: some View {
             VStack(alignment: .center){
                 Spacer()
                 HStack{
                     Button(action: {
-//                        showTambahKategoriPopUp = false
+                        showTambahAkunPopUp = false
                     }){
                         Image("BackButton")
                             .padding(.leading,20)
@@ -137,7 +137,7 @@ struct TambahAkunPopUp: View {
                     Divider()
                     
                     Button{
-//                        showTambahKategoriPopUp = false
+                        showTambahAkunPopUp = false
                     }label: {
                         Text("Tambah Akun")
                             .font(.custom("PlusJakartaSans-SemiBold", size: 16))
@@ -164,5 +164,5 @@ struct TambahAkunPopUp: View {
 }
 
 #Preview {
-    TambahAkunPopUp()
+    TambahAkunPopUp(showTambahAkunPopUp: .constant(true))
 }

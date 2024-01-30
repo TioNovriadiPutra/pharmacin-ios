@@ -9,10 +9,16 @@ import SwiftUI
 
 struct PengajuanObatList: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        VStack(spacing: 10){
+            ObatNonRacikanList()
+            
+            ObatRacikanList()
+        }.background(Color(red: 0.98, green: 0.98, blue: 0.99))
+}
 }
 
-#Preview {
-    PengajuanObatList()
+struct PengajuanObatList_Previews: PreviewProvider {
+    static var previews: some View {
+        PengajuanObatList().previewInterfaceOrientation(.landscapeRight)
+    }
 }

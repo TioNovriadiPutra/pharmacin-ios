@@ -15,7 +15,7 @@ struct PenjualanView: View {
     let searchPaymentList = ["Red", "Green", "Blue", "Black", "Tartan"]
     @State private var selectionPayment = ""
     
-      
+    
     var body: some View {
         NavigationStack{
             GeometryReader { geometry in

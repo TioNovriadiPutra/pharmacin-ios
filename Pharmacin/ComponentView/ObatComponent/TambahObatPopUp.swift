@@ -12,9 +12,9 @@ struct TambahObatPopUp: View {
     @State private var namaObat: String = ""
     @State private var namaGenerik: String = ""
     @State private var takaran: String = ""
-    @State private var kategori: String = ""
+    //@State private var kategori: String = ""
     @State private var rak: String = ""
-    @State private var pabrikan: String = ""
+    //@State private var pabrikan: String = ""
     @State private var hargaBeliPabrikan: String = ""
     @State private var hargaJual: String = ""
     

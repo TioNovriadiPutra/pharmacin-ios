@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RawatPasienAntrianPasienHariIniView: View {
+struct RawatPasienAntrianPasienView: View {
     @State private var isClose = false
     
     var body: some View {
@@ -23,11 +23,11 @@ struct RawatPasienAntrianPasienHariIniView: View {
                             Text("Rawat Pasien")
                                 .font(.custom("PlusJakartaSans-Bold", size: 24))
                                 .foregroundColor(Color("Subtitle"))
-                            Text("/ Antrian Pasien Hari Ini")
+                            Text("/ Antrian Pasien")
                                 .font(.custom("PlusJakartaSans-SemiBold", size: 16))
                                 .foregroundColor(Color("LightGray"))
                             
-                            Spacer() 
+                            Spacer()
                         }
     
                         HStack(spacing: 16){
@@ -40,24 +40,9 @@ struct RawatPasienAntrianPasienHariIniView: View {
                         
                         .padding(.bottom,8)
                         
-                        ScrollView(.vertical){
-                            HStack(spacing:16){
-                                
-                                VStack{
-                                    PenjualanTerakhirCart()
-                                    Spacer()
-                                }
-                                
-                                VStack(spacing:14){
-                                    RiwayatKasirCart()
-                                    
-                                    PembelianTerakhirCart()
-                                    Spacer()
-                                }
-                                
-                                Spacer()
-                            }
-                        }
+                        AntrianPasienList() 
+                        
+                        
                         
                         
                         
@@ -78,8 +63,8 @@ struct RawatPasienAntrianPasienHariIniView: View {
 
 struct RawatPasien_Previews: PreviewProvider {
     static var previews: some View {
-        RawatPasienAntrianPasienHariIniView()
-        RawatPasienAntrianPasienHariIniView().previewInterfaceOrientation(.landscapeRight)
+        RawatPasienAntrianPasienView()
+        RawatPasienAntrianPasienView().previewInterfaceOrientation(.landscapeRight)
         
     }
 }

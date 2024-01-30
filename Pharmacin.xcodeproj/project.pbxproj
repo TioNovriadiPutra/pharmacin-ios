@@ -21,6 +21,28 @@
 		163E18612B2CAE4800D9721D /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163E18602B2CAE4800D9721D /* LottieView.swift */; };
 		163E18662B2CB8F100D9721D /* PabrikanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163E18652B2CB8F100D9721D /* PabrikanModel.swift */; };
 		163E18692B2CC21600D9721D /* PabrikanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163E18682B2CC21600D9721D /* PabrikanViewModel.swift */; };
+		169F19162B63D45000737162 /* SuccessComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19152B63D45000737162 /* SuccessComponent.swift */; };
+		169F19192B63D77C00737162 /* FailureComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19182B63D77C00737162 /* FailureComponent.swift */; };
+		169F191B2B6668C000737162 /* SideMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F191A2B6668C000737162 /* SideMenuButton.swift */; };
+		169F19382B68C70A00737162 /* FormPerawatanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19372B68C70A00737162 /* FormPerawatanView.swift */; };
+		169F193A2B68C90A00737162 /* FormPerawatanHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19392B68C90A00737162 /* FormPerawatanHeader.swift */; };
+		169F193C2B68E9B300737162 /* AssesmentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F193B2B68E9B300737162 /* AssesmentList.swift */; };
+		169F193E2B68F8D100737162 /* HasilAssesmentAkhirList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F193D2B68F8D100737162 /* HasilAssesmentAkhirList.swift */; };
+		169F19402B68F8DF00737162 /* HasilAssesmentAkhirListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F193F2B68F8DF00737162 /* HasilAssesmentAkhirListTable.swift */; };
+		169F19422B6903F100737162 /* PengajuanObatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19412B6903F100737162 /* PengajuanObatList.swift */; };
+		169F19442B69071300737162 /* ObatNonRacikanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19432B69071300737162 /* ObatNonRacikanList.swift */; };
+		169F19462B69077E00737162 /* ObatNonRacikanListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19452B69077E00737162 /* ObatNonRacikanListTable.swift */; };
+		169F19482B69080300737162 /* TambahObatNonRacikan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19472B69080300737162 /* TambahObatNonRacikan.swift */; };
+		169F194A2B690D1400737162 /* ObatRacikanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19492B690D1400737162 /* ObatRacikanList.swift */; };
+		169F194C2B690D2A00737162 /* ObatRacikanListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F194B2B690D2A00737162 /* ObatRacikanListTable.swift */; };
+		169F194E2B690D3D00737162 /* TambahObatRacikan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F194D2B690D3D00737162 /* TambahObatRacikan.swift */; };
+		169F19502B69106300737162 /* TindakanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F194F2B69106300737162 /* TindakanList.swift */; };
+		169F19522B69106D00737162 /* TindakanListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19512B69106D00737162 /* TindakanListTable.swift */; };
+		169F19542B69108700737162 /* TambahTindakan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19532B69108700737162 /* TambahTindakan.swift */; };
+		169F19562B69126600737162 /* LaboratoriumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19552B69126600737162 /* LaboratoriumList.swift */; };
+		169F19582B69127500737162 /* LaboratoriumListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19572B69127500737162 /* LaboratoriumListTable.swift */; };
+		169F195A2B69128300737162 /* TambahLaboratorium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F19592B69128300737162 /* TambahLaboratorium.swift */; };
+		169F195C2B6948EE00737162 /* PasienRiwayatPeriksaPasienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F195B2B6948EE00737162 /* PasienRiwayatPeriksaPasienView.swift */; };
 		16C92C1E2B2F5B7800826935 /* TambahKategoriPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C92C1D2B2F5B7800826935 /* TambahKategoriPopUp.swift */; };
 		16C92C202B2F641400826935 /* ObatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C92C1F2B2F641400826935 /* ObatModel.swift */; };
 		16C92C222B2F669200826935 /* ObatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C92C212B2F669200826935 /* ObatViewModel.swift */; };
@@ -40,6 +62,18 @@
 		16C962D22B345A0D0030D081 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C962D12B345A0D0030D081 /* LoginViewModel.swift */; };
 		16C962D42B35A0440030D081 /* KlinikModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C962D32B35A0440030D081 /* KlinikModel.swift */; };
 		16C962D62B36D10B0030D081 /* EditInfoKlinikPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C962D52B36D10B0030D081 /* EditInfoKlinikPopUp.swift */; };
+		16E2A9CC2B42E2A10017D452 /* RawatPasienAntrianPasienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2A9CB2B42E2A10017D452 /* RawatPasienAntrianPasienView.swift */; };
+		16E2A9CE2B43EF730017D452 /* AntrianPasienList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2A9CD2B43EF730017D452 /* AntrianPasienList.swift */; };
+		16E2A9D02B43F6140017D452 /* AntrianPasienListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2A9CF2B43F6140017D452 /* AntrianPasienListTable.swift */; };
+		16E2A9D22B45B3DD0017D452 /* PendaftaranDaftarPasienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2A9D12B45B3DD0017D452 /* PendaftaranDaftarPasienView.swift */; };
+		16E2A9D52B45B7DD0017D452 /* DaftarPasienList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2A9D42B45B7DD0017D452 /* DaftarPasienList.swift */; };
+		16E2A9D72B45B8B30017D452 /* DaftarPasienListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2A9D62B45B8B30017D452 /* DaftarPasienListTable.swift */; };
+		16E2A9D92B45BC880017D452 /* DataPasienTerdaftarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2A9D82B45BC880017D452 /* DataPasienTerdaftarList.swift */; };
+		16E2A9DB2B45BDA70017D452 /* DataPasienTerdaftarListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2A9DA2B45BDA70017D452 /* DataPasienTerdaftarListTable.swift */; };
+		16E2A9DD2B46FBBF0017D452 /* PasienDataPasienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2A9DC2B46FBBF0017D452 /* PasienDataPasienView.swift */; };
+		16E2A9E02B46FD660017D452 /* DataPasienList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2A9DF2B46FD660017D452 /* DataPasienList.swift */; };
+		16E2A9E22B46FD720017D452 /* DataPasienListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2A9E12B46FD720017D452 /* DataPasienListTable.swift */; };
+		16E2A9E42B46FF790017D452 /* TambahPasienPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2A9E32B46FF790017D452 /* TambahPasienPopUp.swift */; };
 		16F069B42B11D969005569A6 /* DashboardCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069B32B11D969005569A6 /* DashboardCart.swift */; };
 		16F069B72B11DE31005569A6 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069B62B11DE31005569A6 /* DashboardView.swift */; };
 		16F069B92B11F12D005569A6 /* PenjualanTerakhirCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F069B82B11F12D005569A6 /* PenjualanTerakhirCart.swift */; };
@@ -128,6 +162,28 @@
 		163E18602B2CAE4800D9721D /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		163E18652B2CB8F100D9721D /* PabrikanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PabrikanModel.swift; sourceTree = "<group>"; };
 		163E18682B2CC21600D9721D /* PabrikanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PabrikanViewModel.swift; sourceTree = "<group>"; };
+		169F19152B63D45000737162 /* SuccessComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessComponent.swift; sourceTree = "<group>"; };
+		169F19182B63D77C00737162 /* FailureComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureComponent.swift; sourceTree = "<group>"; };
+		169F191A2B6668C000737162 /* SideMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuButton.swift; sourceTree = "<group>"; };
+		169F19372B68C70A00737162 /* FormPerawatanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPerawatanView.swift; sourceTree = "<group>"; };
+		169F19392B68C90A00737162 /* FormPerawatanHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPerawatanHeader.swift; sourceTree = "<group>"; };
+		169F193B2B68E9B300737162 /* AssesmentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssesmentList.swift; sourceTree = "<group>"; };
+		169F193D2B68F8D100737162 /* HasilAssesmentAkhirList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasilAssesmentAkhirList.swift; sourceTree = "<group>"; };
+		169F193F2B68F8DF00737162 /* HasilAssesmentAkhirListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasilAssesmentAkhirListTable.swift; sourceTree = "<group>"; };
+		169F19412B6903F100737162 /* PengajuanObatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PengajuanObatList.swift; sourceTree = "<group>"; };
+		169F19432B69071300737162 /* ObatNonRacikanList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatNonRacikanList.swift; sourceTree = "<group>"; };
+		169F19452B69077E00737162 /* ObatNonRacikanListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatNonRacikanListTable.swift; sourceTree = "<group>"; };
+		169F19472B69080300737162 /* TambahObatNonRacikan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TambahObatNonRacikan.swift; sourceTree = "<group>"; };
+		169F19492B690D1400737162 /* ObatRacikanList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatRacikanList.swift; sourceTree = "<group>"; };
+		169F194B2B690D2A00737162 /* ObatRacikanListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatRacikanListTable.swift; sourceTree = "<group>"; };
+		169F194D2B690D3D00737162 /* TambahObatRacikan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TambahObatRacikan.swift; sourceTree = "<group>"; };
+		169F194F2B69106300737162 /* TindakanList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TindakanList.swift; sourceTree = "<group>"; };
+		169F19512B69106D00737162 /* TindakanListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TindakanListTable.swift; sourceTree = "<group>"; };
+		169F19532B69108700737162 /* TambahTindakan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TambahTindakan.swift; sourceTree = "<group>"; };
+		169F19552B69126600737162 /* LaboratoriumList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboratoriumList.swift; sourceTree = "<group>"; };
+		169F19572B69127500737162 /* LaboratoriumListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboratoriumListTable.swift; sourceTree = "<group>"; };
+		169F19592B69128300737162 /* TambahLaboratorium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TambahLaboratorium.swift; sourceTree = "<group>"; };
+		169F195B2B6948EE00737162 /* PasienRiwayatPeriksaPasienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasienRiwayatPeriksaPasienView.swift; sourceTree = "<group>"; };
 		16C92C1D2B2F5B7800826935 /* TambahKategoriPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TambahKategoriPopUp.swift; sourceTree = "<group>"; };
 		16C92C1F2B2F641400826935 /* ObatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatModel.swift; sourceTree = "<group>"; };
 		16C92C212B2F669200826935 /* ObatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObatViewModel.swift; sourceTree = "<group>"; };
@@ -147,6 +203,18 @@
 		16C962D12B345A0D0030D081 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		16C962D32B35A0440030D081 /* KlinikModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlinikModel.swift; sourceTree = "<group>"; };
 		16C962D52B36D10B0030D081 /* EditInfoKlinikPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInfoKlinikPopUp.swift; sourceTree = "<group>"; };
+		16E2A9CB2B42E2A10017D452 /* RawatPasienAntrianPasienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawatPasienAntrianPasienView.swift; sourceTree = "<group>"; };
+		16E2A9CD2B43EF730017D452 /* AntrianPasienList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntrianPasienList.swift; sourceTree = "<group>"; };
+		16E2A9CF2B43F6140017D452 /* AntrianPasienListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntrianPasienListTable.swift; sourceTree = "<group>"; };
+		16E2A9D12B45B3DD0017D452 /* PendaftaranDaftarPasienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendaftaranDaftarPasienView.swift; sourceTree = "<group>"; };
+		16E2A9D42B45B7DD0017D452 /* DaftarPasienList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarPasienList.swift; sourceTree = "<group>"; };
+		16E2A9D62B45B8B30017D452 /* DaftarPasienListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarPasienListTable.swift; sourceTree = "<group>"; };
+		16E2A9D82B45BC880017D452 /* DataPasienTerdaftarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPasienTerdaftarList.swift; sourceTree = "<group>"; };
+		16E2A9DA2B45BDA70017D452 /* DataPasienTerdaftarListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPasienTerdaftarListTable.swift; sourceTree = "<group>"; };
+		16E2A9DC2B46FBBF0017D452 /* PasienDataPasienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasienDataPasienView.swift; sourceTree = "<group>"; };
+		16E2A9DF2B46FD660017D452 /* DataPasienList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPasienList.swift; sourceTree = "<group>"; };
+		16E2A9E12B46FD720017D452 /* DataPasienListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPasienListTable.swift; sourceTree = "<group>"; };
+		16E2A9E32B46FF790017D452 /* TambahPasienPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TambahPasienPopUp.swift; sourceTree = "<group>"; };
 		16F069B32B11D969005569A6 /* DashboardCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCart.swift; sourceTree = "<group>"; };
 		16F069B62B11DE31005569A6 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		16F069B82B11F12D005569A6 /* PenjualanTerakhirCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenjualanTerakhirCart.swift; sourceTree = "<group>"; };
@@ -308,6 +376,30 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		169F19142B63D42A00737162 /* SuccessComponent */ = {
+			isa = PBXGroup;
+			children = (
+				169F19152B63D45000737162 /* SuccessComponent.swift */,
+			);
+			path = SuccessComponent;
+			sourceTree = "<group>";
+		};
+		169F19172B63D76300737162 /* FailureComponent */ = {
+			isa = PBXGroup;
+			children = (
+				169F19182B63D77C00737162 /* FailureComponent.swift */,
+			);
+			path = FailureComponent;
+			sourceTree = "<group>";
+		};
+		169F191C2B66698500737162 /* SideMenuComponent */ = {
+			isa = PBXGroup;
+			children = (
+				169F191A2B6668C000737162 /* SideMenuButton.swift */,
+			);
+			path = SideMenuComponent;
+			sourceTree = "<group>";
+		};
 		16C9627E2B30D2910030D081 /* ManajemenComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,9 +421,62 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		16E2A9CA2B42E26E0017D452 /* RawatPasienComponent */ = {
+			isa = PBXGroup;
+			children = (
+				16E2A9CD2B43EF730017D452 /* AntrianPasienList.swift */,
+				16E2A9CF2B43F6140017D452 /* AntrianPasienListTable.swift */,
+				169F19392B68C90A00737162 /* FormPerawatanHeader.swift */,
+				169F193B2B68E9B300737162 /* AssesmentList.swift */,
+				169F193D2B68F8D100737162 /* HasilAssesmentAkhirList.swift */,
+				169F193F2B68F8DF00737162 /* HasilAssesmentAkhirListTable.swift */,
+				169F19412B6903F100737162 /* PengajuanObatList.swift */,
+				169F19432B69071300737162 /* ObatNonRacikanList.swift */,
+				169F19452B69077E00737162 /* ObatNonRacikanListTable.swift */,
+				169F19472B69080300737162 /* TambahObatNonRacikan.swift */,
+				169F19492B690D1400737162 /* ObatRacikanList.swift */,
+				169F194B2B690D2A00737162 /* ObatRacikanListTable.swift */,
+				169F194D2B690D3D00737162 /* TambahObatRacikan.swift */,
+				169F194F2B69106300737162 /* TindakanList.swift */,
+				169F19512B69106D00737162 /* TindakanListTable.swift */,
+				169F19532B69108700737162 /* TambahTindakan.swift */,
+				169F19552B69126600737162 /* LaboratoriumList.swift */,
+				169F19572B69127500737162 /* LaboratoriumListTable.swift */,
+				169F19592B69128300737162 /* TambahLaboratorium.swift */,
+			);
+			path = RawatPasienComponent;
+			sourceTree = "<group>";
+		};
+		16E2A9D32B45B7B40017D452 /* PendaftaranComponent */ = {
+			isa = PBXGroup;
+			children = (
+				16E2A9D42B45B7DD0017D452 /* DaftarPasienList.swift */,
+				16E2A9D62B45B8B30017D452 /* DaftarPasienListTable.swift */,
+				16E2A9D82B45BC880017D452 /* DataPasienTerdaftarList.swift */,
+				16E2A9DA2B45BDA70017D452 /* DataPasienTerdaftarListTable.swift */,
+			);
+			path = PendaftaranComponent;
+			sourceTree = "<group>";
+		};
+		16E2A9DE2B46FD4D0017D452 /* PasienComponent */ = {
+			isa = PBXGroup;
+			children = (
+				16E2A9DF2B46FD660017D452 /* DataPasienList.swift */,
+				16E2A9E12B46FD720017D452 /* DataPasienListTable.swift */,
+				16E2A9E32B46FF790017D452 /* TambahPasienPopUp.swift */,
+			);
+			path = PasienComponent;
+			sourceTree = "<group>";
+		};
 		16F069B22B11D920005569A6 /* ComponentView */ = {
 			isa = PBXGroup;
 			children = (
+				169F191C2B66698500737162 /* SideMenuComponent */,
+				169F19172B63D76300737162 /* FailureComponent */,
+				169F19142B63D42A00737162 /* SuccessComponent */,
+				16E2A9DE2B46FD4D0017D452 /* PasienComponent */,
+				16E2A9D32B45B7B40017D452 /* PendaftaranComponent */,
+				16E2A9CA2B42E26E0017D452 /* RawatPasienComponent */,
 				16C9627E2B30D2910030D081 /* ManajemenComponent */,
 				16F06A772B2211ED005569A6 /* PembelianComponent */,
 				16F06A8D2B22E368005569A6 /* BukuBesarComponent */,
@@ -371,6 +516,11 @@
 				16C92C232B30920800826935 /* LoginView.swift */,
 				16C92C252B30921200826935 /* SignUpView.swift */,
 				16C92C272B30921F00826935 /* SplashScreenView.swift */,
+				16E2A9CB2B42E2A10017D452 /* RawatPasienAntrianPasienView.swift */,
+				169F19372B68C70A00737162 /* FormPerawatanView.swift */,
+				16E2A9D12B45B3DD0017D452 /* PendaftaranDaftarPasienView.swift */,
+				16E2A9DC2B46FBBF0017D452 /* PasienDataPasienView.swift */,
+				169F195B2B6948EE00737162 /* PasienRiwayatPeriksaPasienView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -570,6 +720,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16F06A952B22E5CD005569A6 /* BukuBesarPembelianList.swift in Sources */,
+				16E2A9CE2B43EF730017D452 /* AntrianPasienList.swift in Sources */,
 				16C92C202B2F641400826935 /* ObatModel.swift in Sources */,
 				16F06A8A2B2229D3005569A6 /* StokHabisListTable.swift in Sources */,
 				16F06A3C2B1E345E005569A6 /* StokRiwayatOpnameList.swift in Sources */,
@@ -584,6 +735,8 @@
 				16F06A422B1E4B56005569A6 /* KelolaPenjualanList.swift in Sources */,
 				163E18692B2CC21600D9721D /* PabrikanViewModel.swift in Sources */,
 				16F06A1C2B1B598D005569A6 /* StokOpnameDetailList.swift in Sources */,
+				169F19192B63D77C00737162 /* FailureComponent.swift in Sources */,
+				169F193C2B68E9B300737162 /* AssesmentList.swift in Sources */,
 				16F069DA2B18472D005569A6 /* StokListTableBatch.swift in Sources */,
 				16F06A102B1B2A5C005569A6 /* PopupPembayaranBerhasil.swift in Sources */,
 				16F06A882B222998005569A6 /* StokHabisList.swift in Sources */,
@@ -599,52 +752,73 @@
 				163E184F2B29A94500D9721D /* TambahPenjualanListTable.swift in Sources */,
 				16C962D62B36D10B0030D081 /* EditInfoKlinikPopUp.swift in Sources */,
 				16F06A742B21F5C4005569A6 /* InformasiPabrikPopUp.swift in Sources */,
+				16E2A9D22B45B3DD0017D452 /* PendaftaranDaftarPasienView.swift in Sources */,
 				16F069B42B11D969005569A6 /* DashboardCart.swift in Sources */,
 				16F069BB2B11FF72005569A6 /* InvoiceList.swift in Sources */,
+				169F19422B6903F100737162 /* PengajuanObatList.swift in Sources */,
 				16C962802B30D2D40030D081 /* ManajemenKlinikView.swift in Sources */,
+				16E2A9D02B43F6140017D452 /* AntrianPasienListTable.swift in Sources */,
 				16F06A4B2B1E4E1A005569A6 /* ObatKategoriListTable.swift in Sources */,
 				16C92C222B2F669200826935 /* ObatViewModel.swift in Sources */,
 				163E18572B2A284200D9721D /* TambahPembelianTable.swift in Sources */,
+				16E2A9D92B45BC880017D452 /* DataPasienTerdaftarList.swift in Sources */,
 				16F06A572B1EE3A8005569A6 /* PembelianObatList.swift in Sources */,
 				16F06A3A2B1E2C9E005569A6 /* StokRiwayatOpnameView.swift in Sources */,
+				16E2A9E22B46FD720017D452 /* DataPasienListTable.swift in Sources */,
 				16C92C282B30921F00826935 /* SplashScreenView.swift in Sources */,
 				16F069BD2B1201BE005569A6 /* RiwayatKasirCart.swift in Sources */,
+				169F195C2B6948EE00737162 /* PasienRiwayatPeriksaPasienView.swift in Sources */,
+				169F194C2B690D2A00737162 /* ObatRacikanListTable.swift in Sources */,
 				16F06A612B21EB5F005569A6 /* PabrikanKelolaPabrikView.swift in Sources */,
 				163E18512B29AB5F00D9721D /* TambahPenjualanTable.swift in Sources */,
+				16E2A9E42B46FF790017D452 /* TambahPasienPopUp.swift in Sources */,
 				16F06A1E2B1B59A8005569A6 /* StokOpnameDetailListTable.swift in Sources */,
 				16F069D82B184634005569A6 /* StokListBatch.swift in Sources */,
 				16F069DC2B1887F2005569A6 /* PenjualanView.swift in Sources */,
+				16E2A9DD2B46FBBF0017D452 /* PasienDataPasienView.swift in Sources */,
 				16F06A5F2B20A742005569A6 /* InformasiObatPopUp.swift in Sources */,
 				16F069B92B11F12D005569A6 /* PenjualanTerakhirCart.swift in Sources */,
+				169F19402B68F8DF00737162 /* HasilAssesmentAkhirListTable.swift in Sources */,
 				16F069D42B1670A6005569A6 /* StokListItem.swift in Sources */,
+				169F193A2B68C90A00737162 /* FormPerawatanHeader.swift in Sources */,
+				169F19482B69080300737162 /* TambahObatNonRacikan.swift in Sources */,
+				169F195A2B69128300737162 /* TambahLaboratorium.swift in Sources */,
 				16F06A972B22E601005569A6 /* BukuBesarPembelianListTable.swift in Sources */,
 				16F06A6A2B21F0B5005569A6 /* PabrikanDetailView.swift in Sources */,
 				163E18662B2CB8F100D9721D /* PabrikanModel.swift in Sources */,
 				16F06A532B1E539A005569A6 /* TambahObatPopUp.swift in Sources */,
 				16F06A512B1E523B005569A6 /* ObatKelolaItemListTable.swift in Sources */,
+				169F19442B69071300737162 /* ObatNonRacikanList.swift in Sources */,
 				16F06A812B22250F005569A6 /* NotifikasiView.swift in Sources */,
 				1638E2682B0A347C00E459A0 /* ContentView.swift in Sources */,
 				16C92C262B30921200826935 /* SignUpView.swift in Sources */,
 				16C962882B30DD330030D081 /* TambahAkunPopUp.swift in Sources */,
+				16E2A9D72B45B8B30017D452 /* DaftarPasienListTable.swift in Sources */,
 				16C962822B30DA070030D081 /* ManajemenAkunView.swift in Sources */,
 				16F06A442B1E4BBE005569A6 /* KelolaPenjualanListTable.swift in Sources */,
 				16C962D42B35A0440030D081 /* KlinikModel.swift in Sources */,
+				169F191B2B6668C000737162 /* SideMenuButton.swift in Sources */,
 				16C962842B30DB1C0030D081 /* ManajemenAkunList.swift in Sources */,
 				16F06A552B1EE061005569A6 /* ObatDetailView.swift in Sources */,
 				163E18552B2A27F900D9721D /* TambahPembelianListTable.swift in Sources */,
 				16F06A1A2B1B55FD005569A6 /* StokOpnameDetailView.swift in Sources */,
 				16F069C32B120636005569A6 /* InvoiceListPembelian.swift in Sources */,
+				169F194A2B690D1400737162 /* ObatRacikanList.swift in Sources */,
 				16F06A842B22280F005569A6 /* KadaluarsaList.swift in Sources */,
 				16F06A5D2B1EE54B005569A6 /* PenjualanObatListTable.swift in Sources */,
 				16F06A6C2B21F1C4005569A6 /* JenisObatList.swift in Sources */,
 				16F069B72B11DE31005569A6 /* DashboardView.swift in Sources */,
+				169F19562B69126600737162 /* LaboratoriumList.swift in Sources */,
 				16F06A592B1EE451005569A6 /* PembelianObatListTable.swift in Sources */,
 				16F06A912B22E497005569A6 /* BukuBesarPenjualanListTable.swift in Sources */,
 				16F06A722B21F4C8005569A6 /* PembelianObatPabrikanListTable.swift in Sources */,
 				16F06A3E2B1E3623005569A6 /* StokRiwayatOpnameListTable.swift in Sources */,
+				169F19522B69106D00737162 /* TindakanListTable.swift in Sources */,
 				16F06A162B1B3A03005569A6 /* StokOpnameList.swift in Sources */,
+				169F194E2B690D3D00737162 /* TambahObatRacikan.swift in Sources */,
 				163E18532B2A27E500D9721D /* TambahPembelianList.swift in Sources */,
 				16F06A7B2B2212B7005569A6 /* KelolaPembelianView.swift in Sources */,
+				169F19542B69108700737162 /* TambahTindakan.swift in Sources */,
 				16C962D22B345A0D0030D081 /* LoginViewModel.swift in Sources */,
 				16C9628A2B30E0480030D081 /* ManajemenRiwayatKasirView.swift in Sources */,
 				16F06A8C2B22E0FF005569A6 /* BukuBesarPenjualanView.swift in Sources */,
@@ -652,18 +826,28 @@
 				1638E2662B0A347C00E459A0 /* PharmacinApp.swift in Sources */,
 				16F06A182B1B3B09005569A6 /* StokOpnameListTable.swift in Sources */,
 				163E18612B2CAE4800D9721D /* LottieView.swift in Sources */,
+				169F193E2B68F8D100737162 /* HasilAssesmentAkhirList.swift in Sources */,
 				16F06A5B2B1EE53D005569A6 /* PenjualanObatList.swift in Sources */,
+				169F19582B69127500737162 /* LaboratoriumListTable.swift in Sources */,
 				16F06A702B21F3AC005569A6 /* PembelianObatPabrikanList.swift in Sources */,
 				16F06A642B21EC56005569A6 /* KelolaPabrikList.swift in Sources */,
 				16F06A682B21EF5F005569A6 /* TambahPabrikPopUp.swift in Sources */,
+				169F19502B69106300737162 /* TindakanList.swift in Sources */,
 				16C9628E2B30E2840030D081 /* ManajemenRiwayattKasirListTable.swift in Sources */,
 				16F06A402B1E4989005569A6 /* KelolaPenjualanView.swift in Sources */,
 				16C9628C2B30E26B0030D081 /* ManajemenRiwayatKasirList.swift in Sources */,
+				169F19382B68C70A00737162 /* FormPerawatanView.swift in Sources */,
+				16E2A9D52B45B7DD0017D452 /* DaftarPasienList.swift in Sources */,
+				169F19162B63D45000737162 /* SuccessComponent.swift in Sources */,
+				16E2A9DB2B45BDA70017D452 /* DataPasienTerdaftarListTable.swift in Sources */,
 				16F06A462B1E4CF6005569A6 /* ObatKategoriView.swift in Sources */,
+				16E2A9E02B46FD660017D452 /* DataPasienList.swift in Sources */,
+				169F19462B69077E00737162 /* ObatNonRacikanListTable.swift in Sources */,
 				16F069D62B175DFE005569A6 /* StokListTableItem.swift in Sources */,
 				16F06A8F2B22E40C005569A6 /* BukuBesarPenjualanList.swift in Sources */,
 				16C92C242B30920800826935 /* LoginView.swift in Sources */,
 				16C962862B30DB2B0030D081 /* ManajemenAkunListTable.swift in Sources */,
+				16E2A9CC2B42E2A10017D452 /* RawatPasienAntrianPasienView.swift in Sources */,
 				16F069C62B148FF3005569A6 /* StokView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

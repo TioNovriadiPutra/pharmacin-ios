@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var selectedMenu = "Dashboard"
+    
     @State private var isExpanded = false
     @State private var isDashboard = true
     @State private var isStok = false
@@ -200,890 +202,599 @@ struct ContentView: View {
                                     .padding(.vertical)
                                 
                                 
-                                Button(action: {
-                                    isDashboard = true
-                                    isNotifikasi = false
-                                    isExpanded = false
-                                    isTambahPenjualanSubMenu = false
-                                    isKelolaPenjualanSubMenu = false
-                                    isStokStokSubMenu = false
-                                    isStokOpnameSubMenu = false
-                                    isStokRiwayatOpnameSubMenu = false
-                                    isObatKategoriSubMenu = false
-                                    isKelolaObatSubMenu = false
-                                    isTambahPembelianSubMenu = false
-                                    isKelolaPembelianSubMenu = false
-                                    isBukuBesarPembelianSubMenu = false
-                                    isBukuBesarPenjualanSubMenu = false
-                                    isManajemenKlinikMenu = false
-                                    isManajemenKaryawanSubMenu = false
-                                    isManajemenRiwayatKasirSubMenu = false
-                                    isTransaksiBaruSubMenu = false
-                                    isPengaturanSubMenu = false
-                                    isKeluarSubMenu = false
-                                    isPabrikan = false
-                                    isStokSubMenuVisible = false
-                                    isPenjualanSubMenuVisible = false
-                                    isObatSubMenuVisible = false
-                                    isPembelianSubMenuVisible = false
-                                    isBukuBesarSubMenuVisible = false
-                                    isManajemenSubMenuVisible = false
-                                    isOptionSubMenuVisible = false
-                                    
-                                }) {
-                                    if isExpanded{
-                                        HStack{
-                                            Image("Dashboard")
-                                            Text("Dashboard")
-                                                .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                .foregroundColor(Color("LG"))
-                                                .padding(.leading,10)
-                                            
-                                        }.padding(.bottom,24)
-                                        //                                    .frame(height:60)
-                                        
-                                    }else{
-                                        HStack{
-                                            Spacer()
-                                            isDashboard ? Image("DashboardGreen") : Image("Dashboard")
-                                            Spacer()
-                                        }.padding(.bottom,24)
-                                        //                                    .frame(height:60)
-                                        
-                                    }
-                                }
                                 
-                                
-                                Button(action: {
-                                    isExpanded = true
-                                    isStokSubMenuVisible = false
-                                    isPenjualanSubMenuVisible = true
-                                    isObatSubMenuVisible = false
-                                    isPembelianSubMenuVisible = false
-                                    isBukuBesarSubMenuVisible = false
-                                    isManajemenSubMenuVisible = false
-                                    isOptionSubMenuVisible = false
-                                }) {
-                                    if isExpanded {
-                                        //                                    ZStack{
-                                        //                                        HStack (spacing: 20){
-                                        
-                                        HStack {
-                                            
-                                            Image("Penjualan")
-                                            Text("Penjualan")
-                                                .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                .foregroundColor(Color("LG"))
-                                                .padding(.leading, 10)
-                                            
-                                            Image(systemName: "chevron.right")
-                                                .foregroundColor(Color("LG"))
-                                                .frame(width: 32, height: 32)
-                                                .padding(.leading,82)
-                                            Spacer()
-                                            //                                            }
-                                        }.padding(.bottom,24)
-                                    }else{
-                                        
-                                        HStack {
-                                            Spacer()
-                                            isTambahPenjualanSubMenu || isKelolaPenjualanSubMenu ? Image("PenjualanGreen") : Image("Penjualan")
-                                            Spacer()
-                                        }.padding(.bottom,24)
-                                        
-                                    }
-                                }
-                                .overlay(
-                                    
-                                    Group{
-                                        if isPenjualanSubMenuVisible{
-                                            VStack (alignment:.leading){
+                                    //MARK: DASHBOARD
+//                                ScrollView (.vertical) {
+                                    HStack{
+                                        VStack{
+                                            SideMenuButton(imageName: "Dashboard", title: "Dashboard", isSelected: selectedMenu == "Dashboard", isExpanded: isExpanded, hasSubmenu: false) {
+                                                isExpanded.toggle()
+                                                selectedMenu = "Dashboard"
+                                                isDashboard = true
+                                                isNotifikasi = false
+                                                isExpanded = false
+                                                isTambahPenjualanSubMenu = false
+                                                isKelolaPenjualanSubMenu = false
+                                                isStokStokSubMenu = false
+                                                isStokOpnameSubMenu = false
+                                                isStokRiwayatOpnameSubMenu = false
+                                                isObatKategoriSubMenu = false
+                                                isKelolaObatSubMenu = false
+                                                isTambahPembelianSubMenu = false
+                                                isKelolaPembelianSubMenu = false
+                                                isBukuBesarPembelianSubMenu = false
+                                                isBukuBesarPenjualanSubMenu = false
+                                                isManajemenKlinikMenu = false
+                                                isManajemenKaryawanSubMenu = false
+                                                isManajemenRiwayatKasirSubMenu = false
+                                                isTransaksiBaruSubMenu = false
+                                                isPengaturanSubMenu = false
+                                                isKeluarSubMenu = false
+                                                isPabrikan = false
+                                                isStokSubMenuVisible = false
+                                                isPenjualanSubMenuVisible = false
+                                                isObatSubMenuVisible = false
+                                                isPembelianSubMenuVisible = false
+                                                isBukuBesarSubMenuVisible = false
+                                                isManajemenSubMenuVisible = false
+                                                isOptionSubMenuVisible = false
                                                 
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = true
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isPenjualanSubMenuVisible = false
-                                                }) {
-                                                    Text("Tambah Penjualan")
-                                                    
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                        .padding(.bottom,10)
-                                                    
-                                                }
-                                                Divider()
+                                                print("Dashboard button tapped!")
+                                            }
+                                            
+                                            //MARK: PENJUALAN
+                                            
+                                            SideMenuButton(imageName: "Penjualan", title: "Penjualan", isSelected: selectedMenu == "Penjualan", isExpanded: isExpanded, hasSubmenu: true) {
+                                                isExpanded = true
+                                                selectedMenu = "Penjualan"
+                                                // Set visibilitas submenu untuk Penjualan ke true saat tombol Penjualan ditekan
+                                                isStokSubMenuVisible = false
+                                                isPenjualanSubMenuVisible = true
+                                                isObatSubMenuVisible = false
+                                                isPembelianSubMenuVisible = false
+                                                isBukuBesarSubMenuVisible = false
+                                                isManajemenSubMenuVisible = false
+                                                isOptionSubMenuVisible = false
+                                                print("Penjualan button tapped!")
+                                            }
+                                            .overlay(
+                                                SubMenuView(isVisible: isPenjualanSubMenuVisible, subMenuTitle: "Penjualan", subMenuItems: [
+                                                    SubMenuModel(title: "Tambah Penjualan") {
+                                                        // Handle Tambah Penjualan action
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = true
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isPenjualanSubMenuVisible = false
+                                                        print("Tambah Penjualan tapped!")
+                                                    },
+                                                    SubMenuModel(title: "Kelola Penjualan") {
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = true
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isPenjualanSubMenuVisible = false
+                                                        print("Kelola Penjualan tapped!")
+                                                    }
+                                                ]),
                                                 
+                                                alignment: .topLeading
                                                 
+                                            )
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            //MARK: STOK
+                                            
+                                            SideMenuButton(imageName: "Stok", title: "Stok", isSelected: selectedMenu == "Stok", isExpanded: isExpanded, hasSubmenu: true) {
+                                                //isExpanded = true
+                                                selectedMenu = "Stok"
+                                                // Set visibilitas submenu untuk Penjualan ke true saat tombol Penjualan ditekan
+                                                isExpanded = true
+                                                isStokSubMenuVisible = true
+                                                isPenjualanSubMenuVisible = false
+                                                isObatSubMenuVisible = false
+                                                isPembelianSubMenuVisible = false
+                                                isBukuBesarSubMenuVisible = false
+                                                isManajemenSubMenuVisible = false
+                                                isOptionSubMenuVisible = false
+                                                print("Penjualan button tapped!")
+                                            }
+                                            .overlay(
+                                                SubMenuView(isVisible: isStokSubMenuVisible, subMenuTitle: "Stok", subMenuItems: [
+                                                    SubMenuModel(title: "Stok") {
+                                                        // Handle Tambah Penjualan action
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = true
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isStokSubMenuVisible = false
+                                                        print("Tambah Penjualan tapped!")
+                                                    },
+                                                    SubMenuModel(title: "Opname") {
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = true
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isStokSubMenuVisible = false
+                                                        print("Kelola Penjualan tapped!")
+                                                    },
+                                                    SubMenuModel(title: "Riwayat Opname") {
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = true
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isStokSubMenuVisible = false
+                                                        print("Kelola Penjualan tapped!")
+                                                    }
+                                                    
+                                                ]),
+                                                alignment: .topLeading
+                                            )
+                                            
+                                            //MARK: OBAT
+                                            
+                                            SideMenuButton(imageName: "Obat", title: "Obat", isSelected: selectedMenu == "Obat", isExpanded: isExpanded, hasSubmenu: true) {
+                                                //isExpanded = true
+                                                selectedMenu = "Obat"
+                                                // Set visibilitas submenu untuk Penjualan ke true saat tombol Penjualan ditekan
+                                                isExpanded = true
+                                                isStokSubMenuVisible = false
+                                                isPenjualanSubMenuVisible = false
+                                                isObatSubMenuVisible = true
+                                                isPembelianSubMenuVisible = false
+                                                isBukuBesarSubMenuVisible = false
+                                                isManajemenSubMenuVisible = false
+                                                isOptionSubMenuVisible = false
+                                                print("Penjualan button tapped!")
+                                            }
+                                            .overlay(
+                                                SubMenuView(isVisible: isObatSubMenuVisible, subMenuTitle: "Obat", subMenuItems: [
+                                                    SubMenuModel(title: "Kategori") {
+                                                        // Handle Tambah Penjualan action
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = true
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isObatSubMenuVisible = false
+                                                        print("Tambah Penjualan tapped!")
+                                                    },
+                                                    SubMenuModel(title: "Kelola Obat") {
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = true
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isObatSubMenuVisible = false
+                                                        print("Kelola Penjualan tapped!")
+                                                    }
+                                                    
+                                                ]),
+                                                alignment: .topLeading
+                                            )
+                                            
+                                            //MARK: PABRIKAN
+                                            
+                                            SideMenuButton(imageName: "Pabrikan", title: "Pabrikan", isSelected: selectedMenu == "Pabrikan", isExpanded: isExpanded, hasSubmenu: false) {
+                                                isExpanded.toggle()
+                                                selectedMenu = "Pabrikan"
+                                                isDashboard = false
+                                                isNotifikasi = false
+                                                isExpanded = false
+                                                isTambahPenjualanSubMenu = false
+                                                isKelolaPenjualanSubMenu = false
+                                                isStokStokSubMenu = false
+                                                isStokOpnameSubMenu = false
+                                                isStokRiwayatOpnameSubMenu = false
+                                                isObatKategoriSubMenu = false
+                                                isKelolaObatSubMenu = false
+                                                isTambahPembelianSubMenu = false
+                                                isKelolaPembelianSubMenu = false
+                                                isBukuBesarPembelianSubMenu = false
+                                                isBukuBesarPenjualanSubMenu = false
+                                                isManajemenKlinikMenu = false
+                                                isManajemenKaryawanSubMenu = false
+                                                isManajemenRiwayatKasirSubMenu = false
+                                                isTransaksiBaruSubMenu = false
+                                                isPengaturanSubMenu = false
+                                                isKeluarSubMenu = false
+                                                isPabrikan = true
+                                                isStokSubMenuVisible = false
+                                                isPenjualanSubMenuVisible = false
+                                                isObatSubMenuVisible = false
+                                                isPembelianSubMenuVisible = false
+                                                isBukuBesarSubMenuVisible = false
+                                                isManajemenSubMenuVisible = false
+                                                isOptionSubMenuVisible = false
+                                                print("Dashboard button tapped!")
+                                            }
+                                            
+                                            //MARK: PEMBELIAN
+                                            
+                                            SideMenuButton(imageName: "Pembelian", title: "Pembelian", isSelected: selectedMenu == "Pembelian", isExpanded: isExpanded, hasSubmenu: true) {
+                                                //isExpanded = true
+                                                selectedMenu = "Pembelian"
+                                                // Set visibilitas submenu untuk Penjualan ke true saat tombol Penjualan ditekan
+                                                isExpanded = true
+                                                isStokSubMenuVisible = false
+                                                isPenjualanSubMenuVisible = false
+                                                isObatSubMenuVisible = false
+                                                isPembelianSubMenuVisible = true
+                                                isBukuBesarSubMenuVisible = false
+                                                isManajemenSubMenuVisible = false
+                                                isOptionSubMenuVisible = false
+                                                print("Penjualan button tapped!")
+                                            }
+                                            .overlay(
+                                                SubMenuView(isVisible: isPembelianSubMenuVisible, subMenuTitle: "Pembelian", subMenuItems: [
+                                                    SubMenuModel(title: "Tambah Pembelian") {
+                                                        // Handle Tambah Penjualan action
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = true
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isPembelianSubMenuVisible = false
+                                                        print("Tambah Penjualan tapped!")
+                                                    },
+                                                    SubMenuModel(title: "Kelola Pembelian") {
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = true
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isPembelianSubMenuVisible = false
+                                                        print("Kelola Penjualan tapped!")
+                                                    }
+                                                    
+                                                ]),
+                                                alignment: .topLeading
+                                            )
+                                            
+                                            //MARK: BUKU BESAR
+                                            
+                                            SideMenuButton(imageName: "BukuBesar", title: "BukuBesar", isSelected: selectedMenu == "BukuBesar", isExpanded: isExpanded, hasSubmenu: true) {
+                                                //isExpanded = true
+                                                selectedMenu = "BukuBesar"
+                                                // Set visibilitas submenu untuk Penjualan ke true saat tombol Penjualan ditekan
+                                                isExpanded = true
+                                                isStokSubMenuVisible = false
+                                                isPenjualanSubMenuVisible = false
+                                                isObatSubMenuVisible = false
+                                                isPembelianSubMenuVisible = false
+                                                isBukuBesarSubMenuVisible = true
+                                                isManajemenSubMenuVisible = false
+                                                isOptionSubMenuVisible = false
+                                                print("Penjualan button tapped!")
+                                            }
+                                            .overlay(
+                                                SubMenuView(isVisible: isBukuBesarSubMenuVisible, subMenuTitle: "Buku Besar", subMenuItems: [
+                                                    SubMenuModel(title: "Penjualan") {
+                                                        // Handle Tambah Penjualan action
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = true
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isBukuBesarSubMenuVisible = false
+                                                        print("Tambah Penjualan tapped!")
+                                                    },
+                                                    SubMenuModel(title: "Pembelian") {
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = true
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isBukuBesarSubMenuVisible = false
+                                                        print("Kelola Penjualan tapped!")
+                                                    }
+                                                    
+                                                ]),
+                                                alignment: .topLeading
+                                            )
+                                            
+                                            //MARK: MANAJEMEN
+                                            
+                                            SideMenuButton(imageName: "Manajemen", title: "Manajemen", isSelected: selectedMenu == "Manajemen", isExpanded: isExpanded, hasSubmenu: true) {
+                                                //isExpanded = true
+                                                selectedMenu = "Manajemen"
+                                                // Set visibilitas submenu untuk Penjualan ke true saat tombol Penjualan ditekan
+                                                isExpanded = true
+                                                isStokSubMenuVisible = false
+                                                isPenjualanSubMenuVisible = false
+                                                isObatSubMenuVisible = false
+                                                isPembelianSubMenuVisible = false
+                                                isBukuBesarSubMenuVisible = false
+                                                isManajemenSubMenuVisible = true
+                                                isOptionSubMenuVisible = false
+                                                print("Penjualan button tapped!")
+                                            }
+                                            .overlay(
+                                                SubMenuView(isVisible: isManajemenSubMenuVisible, subMenuTitle: "Manajemen", subMenuItems: [
+                                                    SubMenuModel(title: "Klinik") {
+                                                        // Handle Tambah Penjualan action
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = true
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isManajemenSubMenuVisible = false
+                                                        print("Tambah Penjualan tapped!")
+                                                    },
+                                                    SubMenuModel(title: "Karyawan") {
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = true
+                                                        isManajemenRiwayatKasirSubMenu = false
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isManajemenSubMenuVisible = false
+                                                        print("Kelola Penjualan tapped!")
+                                                    },
+                                                    SubMenuModel(title: "Riwayat Kasir") {
+                                                        isDashboard = false
+                                                        isNotifikasi = false
+                                                        isExpanded = false
+                                                        isTambahPenjualanSubMenu = false
+                                                        isKelolaPenjualanSubMenu = false
+                                                        isStokStokSubMenu = false
+                                                        isStokOpnameSubMenu = false
+                                                        isStokRiwayatOpnameSubMenu = false
+                                                        isObatKategoriSubMenu = false
+                                                        isKelolaObatSubMenu = false
+                                                        isTambahPembelianSubMenu = false
+                                                        isKelolaPembelianSubMenu = false
+                                                        isBukuBesarPembelianSubMenu = false
+                                                        isBukuBesarPenjualanSubMenu = false
+                                                        isManajemenKlinikMenu = false
+                                                        isManajemenKaryawanSubMenu = false
+                                                        isManajemenRiwayatKasirSubMenu = true
+                                                        isTransaksiBaruSubMenu = false
+                                                        isPengaturanSubMenu = false
+                                                        isKeluarSubMenu = false
+                                                        isPabrikan = false
+                                                        isManajemenSubMenuVisible = false
+                                                        print("Kelola Penjualan tapped!")
+                                                    }
+                                                    
+                                                ]),
+                                                alignment: .topLeading
+                                            ).allowsHitTesting(true)
+                                            
                                                 
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = true
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isPenjualanSubMenuVisible = false
-                                                }) {
-                                                    Text("Kelola Penjualan")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                        .padding(.top,10)
-                                                    
-                                                    
-                                                }
-                                                
-                                            }
-                                            .padding()
-                                            .frame(width: 265, height: 108)
-                                            .background(Color.white)
-                                            .cornerRadius(8)
-                                            
-                                            
-                                            //                                                .frame(height: 300)
                                         }
-                                    }.offset(x:270) ,
-                                    alignment: .topLeading
-                                    
-                                )
-                                
-                                
-                                Button(action: {
-                                    isExpanded = true
-                                    isStokSubMenuVisible = true
-                                    isPenjualanSubMenuVisible = false
-                                    isObatSubMenuVisible = false
-                                    isPembelianSubMenuVisible = false
-                                    isBukuBesarSubMenuVisible = false
-                                    isManajemenSubMenuVisible = false
-                                    isOptionSubMenuVisible = false
-                                    
-                                }) {
-                                    if isExpanded{
-                                        //                                    ZStack{
-                                        //                                        HStack (spacing:20){
-                                        HStack{
-                                            Image("Stok")
-                                            Text("Stok")
-                                                .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                .foregroundColor(Color("LG"))
-                                                .padding(.leading,10)
-                                            
-                                            Image(systemName: "chevron.right")
-                                                .foregroundColor(Color("LG"))
-                                                .frame(width: 32, height: 32)
-                                                .padding(.leading,119)
-                                            Spacer()
-                                        }.padding(.bottom,24)
                                         
-                                    }
-                                    
-                                    else{
-                                        HStack{
-                                            Spacer()
-                                            isStokStokSubMenu || isStokOpnameSubMenu || isStokRiwayatOpnameSubMenu ? Image("StokGreen") : Image("Stok")
-                                            Spacer()
-                                        }.padding(.bottom,24)
-                                        
-                                    }
-                                }
-                                //                                            .frame(width:500)
-                                .overlay(
-                                    Group{
-                                        if isStokSubMenuVisible {
-                                            VStack (alignment:.leading){
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = true
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isStokSubMenuVisible = false
-                                                    
-                                                }) {
-                                                    Text("Stok")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                }
-                                                Divider()
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = true
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isStokSubMenuVisible = false
-                                                }) {
-                                                    Text("Opname")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                }
-                                                Divider()
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = true
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isStokSubMenuVisible = false
-                                                }) {
-                                                    Text("Riwayat Opname")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                }
-                                            }
-                                            .padding()
-                                            .frame(width:265)
-                                            .background(Color.white)
-                                            .cornerRadius(8)
-                                            
-                                            
-                                        }
-                                    }.offset(x:270) ,
-                                    alignment: .topLeading
-                                    
-                                )
-                                //                                        }
-                                
-                                
-                                
-                                Button(action: {
-                                    isExpanded = true
-                                    isStokSubMenuVisible = false
-                                    isPenjualanSubMenuVisible = false
-                                    isObatSubMenuVisible = true
-                                    isPembelianSubMenuVisible = false
-                                    isBukuBesarSubMenuVisible = false
-                                    isManajemenSubMenuVisible = false
-                                    isOptionSubMenuVisible = false
-                                }) {
-                                    if isExpanded{
-                                        //                                    ZStack{
-                                        
-                                        HStack{
-                                            Image("Obat")
-                                            Text("Obat")
-                                                .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                .foregroundColor(Color("LG"))
-                                                .padding(.leading,10)
-                                            
-                                            Image(systemName: "chevron.right")
-                                                .foregroundColor(Color("LG"))
-                                                .frame(width: 32, height: 32)
-                                                .padding(.leading,112)
-                                            Spacer()
-                                        }.padding(.bottom,24)
-                                        
-                                    }else{
-                                        HStack{
-                                            Spacer()
-                                            isObatKategoriSubMenu || isKelolaObatSubMenu ? Image("ObatGreen") : Image("Obat")
-                                            Spacer()
-                                        }.padding(.bottom,24)
-                                        
-                                    }
-                                }
-                                //                                        .frame(width:500)
-                                .overlay(
-                                    
-                                    Group{
-                                        if isObatSubMenuVisible {
-                                            VStack (alignment:.leading){
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = true
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isObatSubMenuVisible = false
-                                                    
-                                                }) {
-                                                    Text("Kategori")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                }
-                                                Divider()
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = true
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isObatSubMenuVisible = false
-                                                }) {
-                                                    Text("Kelola Obat")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                }
-                                            }
-                                            .padding()
-                                            .frame(width:265)
-                                            .background(Color.white)
-                                            .cornerRadius(8)
-                                            
-                                            
-                                        }
-                                    }.offset(x:270) ,
-                                    alignment: .topLeading
-                                )
-                                
-                                
-                                //                                    }
-                                
-                                
-                                
-                                Button(action: {
-                                    isDashboard = false
-                                    isNotifikasi = false
-                                    isExpanded = false
-                                    isTambahPenjualanSubMenu = false
-                                    isKelolaPenjualanSubMenu = false
-                                    isStokStokSubMenu = false
-                                    isStokOpnameSubMenu = false
-                                    isStokRiwayatOpnameSubMenu = false
-                                    isObatKategoriSubMenu = false
-                                    isKelolaObatSubMenu = false
-                                    isTambahPembelianSubMenu = false
-                                    isKelolaPembelianSubMenu = false
-                                    isBukuBesarPembelianSubMenu = false
-                                    isBukuBesarPenjualanSubMenu = false
-                                    isManajemenKlinikMenu = false
-                                    isManajemenKaryawanSubMenu = false
-                                    isManajemenRiwayatKasirSubMenu = false
-                                    isTransaksiBaruSubMenu = false
-                                    isPengaturanSubMenu = false
-                                    isKeluarSubMenu = false
-                                    isPabrikan = true
-                                    isStokSubMenuVisible = false
-                                    isPenjualanSubMenuVisible = false
-                                    isObatSubMenuVisible = false
-                                    isPembelianSubMenuVisible = false
-                                    isBukuBesarSubMenuVisible = false
-                                    isManajemenSubMenuVisible = false
-                                    isOptionSubMenuVisible = false
-                                }) {
-                                    if isExpanded{
-                                        HStack{
-                                            Image("Pabrikan")
-                                            Text("Pabrikan")
-                                                .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                .foregroundColor(Color("LG"))
-                                                .padding(.leading,10)
-                                            
-                                        }.padding(.bottom,24)
-                                        
-                                    }else{
-                                        HStack{
-                                            Spacer()
-                                            isPabrikan ? Image("PabrikanGreen") : Image("Pabrikan")
-                                            Spacer()
-                                        }.padding(.bottom,24)
-                                        
-                                    }
-                                }
-                                
-                                Button(action: {
-                                    isExpanded = true
-                                    isStokSubMenuVisible = false
-                                    isPenjualanSubMenuVisible = false
-                                    isObatSubMenuVisible = false
-                                    isPembelianSubMenuVisible = true
-                                    isBukuBesarSubMenuVisible = false
-                                    isManajemenSubMenuVisible = false
-                                    isOptionSubMenuVisible = false
-                                }) {
-                                    if isExpanded{
-                                        //                                    ZStack{
-                                        HStack{
-                                            Image("Pembelian")
-                                            Text("Pembelian")
-                                                .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                .foregroundColor(Color("LG"))
-                                                .padding(.leading,10)
-                                            
-                                            Image(systemName: "chevron.right")
-                                                .foregroundColor(Color("LG"))
-                                                .frame(width: 32, height: 32)
-                                                .padding(.leading,70)
-                                            
-                                            Spacer()
-                                        }.padding(.bottom,24)
-                                    }
-                                    else{
-                                        HStack{
-                                            Spacer()
-                                            isKelolaPembelianSubMenu || isTambahPembelianSubMenu ? Image("PembelianGreen") : Image("Pembelian")
-                                            Spacer()
-                                        }.padding(.bottom,24)
-                                        
-                                    }
-                                }
-                                //                                        .frame(width:500)
-                                .overlay(
-                                    
-                                    Group{
-                                        if isPembelianSubMenuVisible {
-                                            VStack (alignment:.leading){
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = true
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isPembelianSubMenuVisible = false
-                                                }) {
-                                                    Text("Tambah Pembelian")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                }
-                                                Divider()
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = true
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isPembelianSubMenuVisible = false
-                                                }) {
-                                                    Text("Kelola Pembelian")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                }
-                                            }
-                                            .padding()
-                                            .frame(width:265)
-                                            .background(Color.white)
-                                            .cornerRadius(8)
-                                            
-                                            
-                                        }
-                                    }.offset(x:270) ,
-                                    alignment: .topLeading
-                                )
-                                
-                                
-                                
-                                //                                    }
-                                
-                                
-                                Button(action: {
-                                    isExpanded = true
-                                    isStokSubMenuVisible = false
-                                    isPenjualanSubMenuVisible = false
-                                    isObatSubMenuVisible = false
-                                    isPembelianSubMenuVisible = false
-                                    isBukuBesarSubMenuVisible = true
-                                    isManajemenSubMenuVisible = false
-                                    isOptionSubMenuVisible = false
-                                }) {
-                                    if isExpanded{
-                                        //                                    ZStack{
-                                        
-                                        HStack{
-                                            Image("BukuBesar")
-                                            Text("BukuBesar")
-                                                .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                .foregroundColor(Color("LG"))
-                                                .padding(.leading,10)
-                                            
-                                            Image(systemName: "chevron.right")
-                                                .foregroundColor(Color("LG"))
-                                                .frame(width: 32, height: 32)
-                                                .padding(.leading,67)
-                                            //                                            Spacer()
-                                        }.padding(.bottom,24)
-                                    }else{
-                                        HStack{
-                                            Spacer()
-                                            isBukuBesarPembelianSubMenu || isBukuBesarPenjualanSubMenu ?  Image("BukuBesarGreen") : Image("BukuBesar")
-                                            Spacer()
-                                        }.padding(.bottom,24)
-                                        
-                                    }
-                                }
-                                //                                        .frame(width:500)
-                                .overlay(
-                                    
-                                    Group{
-                                        if isBukuBesarSubMenuVisible {
-                                            VStack (alignment:.leading){
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = true
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isBukuBesarSubMenuVisible = false
-                                                }) {
-                                                    Text("Penjualan")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                }
-                                                Divider()
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = true
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isBukuBesarSubMenuVisible = false
-                                                }) {
-                                                    Text("Pembelian")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                }
-                                            }
-                                            .padding()
-                                            .frame(width:265)
-                                            .background(Color.white)
-                                            .cornerRadius(8)
-                                            
-                                            
-                                        }
-                                    }.offset(x:270) ,
-                                    alignment: .topLeading
-                                )
-                                //                                    }
-                                
-                                
-                                
-                                Button(action: {
-                                    isExpanded = true
-                                    isStokSubMenuVisible = false
-                                    isPenjualanSubMenuVisible = false
-                                    isObatSubMenuVisible = false
-                                    isPembelianSubMenuVisible = false
-                                    isBukuBesarSubMenuVisible = false
-                                    isManajemenSubMenuVisible = true
-                                    isOptionSubMenuVisible = false
-                                }) {
-                                    if isExpanded{
-                                        HStack{
-                                            Image("Manajemen")
-                                            Text("Manajemen")
-                                                .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                .foregroundColor(Color("LG"))
-                                                .padding(.leading,10)
-                                            
-                                            Image(systemName: "chevron.right")
-                                                .foregroundColor(Color("LG"))
-                                                .frame(width: 32, height: 32)
-                                                .padding(.leading,60)
-                                        }.padding(.bottom,24)
                                         
                                     }
                                     
                                     
-                                    
-                                    
-                                    else{
-                                        HStack{
-                                            Spacer()
-                                            isManajemenKlinikMenu || isManajemenKaryawanSubMenu || isManajemenRiwayatKasirSubMenu ? Image("ManajemenGreen") : Image("Manajemen")
-                                            Spacer()
-                                        }.padding(.bottom,24)
-                                        
-                                    }
-                                }
+//                                }
                                 
-                                .overlay(
-                                    
-                                    Group{
-                                        if isManajemenSubMenuVisible {
-                                            VStack (alignment:.leading){
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = true
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isManajemenSubMenuVisible = false
-                                                }) {
-                                                    Text("Klinik")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                }
-                                                Divider()
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = true
-                                                    isManajemenRiwayatKasirSubMenu = false
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isManajemenSubMenuVisible = false
-                                                }) {
-                                                    Text("Karyawan")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                }
-                                                Divider()
-                                                Button(action: {
-                                                    isDashboard = false
-                                                    isNotifikasi = false
-                                                    isExpanded = false
-                                                    isTambahPenjualanSubMenu = false
-                                                    isKelolaPenjualanSubMenu = false
-                                                    isStokStokSubMenu = false
-                                                    isStokOpnameSubMenu = false
-                                                    isStokRiwayatOpnameSubMenu = false
-                                                    isObatKategoriSubMenu = false
-                                                    isKelolaObatSubMenu = false
-                                                    isTambahPembelianSubMenu = false
-                                                    isKelolaPembelianSubMenu = false
-                                                    isBukuBesarPembelianSubMenu = false
-                                                    isBukuBesarPenjualanSubMenu = false
-                                                    isManajemenKlinikMenu = false
-                                                    isManajemenKaryawanSubMenu = false
-                                                    isManajemenRiwayatKasirSubMenu = true
-                                                    isTransaksiBaruSubMenu = false
-                                                    isPengaturanSubMenu = false
-                                                    isKeluarSubMenu = false
-                                                    isPabrikan = false
-                                                    isManajemenSubMenuVisible = false
-                                                }) {
-                                                    Text("Riwayat Kasir")
-                                                        .font(.custom("PlusJakartaSans-Medium", size: 16))
-                                                        .foregroundColor(Color("LG"))
-                                                        .padding(.leading, 10)
-                                                }
-                                            }
-                                            .padding()
-                                            .frame(width:265)
-                                            .background(Color.white)
-                                            .cornerRadius(8)
-                                            
-                                            
-                                        }
-                                    }.offset(x:270) ,
-                                    alignment: .topLeading
-                                )
                                 
+                                
+                                     
                                 
                                 Spacer()
                                 
                                 Button(action: {
+                                    selectedMenu = "Penjualan"
                                     isDashboard = false
                                     isNotifikasi = false
                                     isExpanded = false
@@ -1138,10 +849,6 @@ struct ContentView: View {
                                     .foregroundColor(Color(red: 0.88, green: 0.87, blue: 0.87))
                                     .padding(.top,10)
                                     .padding(.bottom,10)
-                                //                                Divider()
-                                //                                    .padding(.trailing,330)
-                                //                                    .padding()
-                                
                                 
                                 if isExpanded{
                                     //                                ZStack{
@@ -1265,20 +972,25 @@ struct ContentView: View {
                                     //                                }
                                     //                                .frame(height:30)
                                 }else{
-                                    HStack{
-                                        Spacer()
-                                        Image("Profile")
-                                        Spacer()
+                                    Button(action: {
+                                        isExpanded = true
+                                        isStokSubMenuVisible = false
+                                        isPenjualanSubMenuVisible = false
+                                        isObatSubMenuVisible = false
+                                        isPembelianSubMenuVisible = false
+                                        isBukuBesarSubMenuVisible = false
+                                        isManajemenSubMenuVisible = false
+                                        isOptionSubMenuVisible = true
+                                    }){
+                                        HStack{
+                                            Spacer()
+                                            Image("Profile")
+                                            Spacer()
+                                        }
                                     }
-                                    
-                                    
-                                    
+
                                 }
-                                
-                                
-                                
-                                
-                                
+ 
                             }
                             .padding(.horizontal,16)
                             .frame(maxHeight: .infinity)

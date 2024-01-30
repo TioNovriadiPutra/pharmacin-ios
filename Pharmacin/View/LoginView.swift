@@ -87,7 +87,7 @@ struct LoginView: View {
                                 RoundedRectangle(cornerRadius: 10)
                                     .stroke(loginVM.hasError ? Color(Color("Red")) : Color(red: 0.93, green: 0.93, blue: 0.96))
                             )
-                             
+                            
                             .padding(.bottom,64)
                             NavigationLink(
                                 destination: ContentView().navigationBarBackButtonHidden(true),

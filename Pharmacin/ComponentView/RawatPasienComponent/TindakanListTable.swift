@@ -9,7 +9,27 @@ import SwiftUI
 
 struct TindakanListTable: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+            TambahTindakan()
+            
+            Button{
+                print("Add Item")
+            }label: {
+                Text("Add Item")
+                    .font(.custom("PlusJakartaSans-SemiBold", size: 16))
+                    .foregroundColor(.white)
+                    .frame(width: 155, alignment: .center)
+                    .frame(height: 44)
+                    .background(Color("DarkBlue"))
+                    .cornerRadius(10)
+                    .padding(.top,20)
+            }
+           
+            .frame(width: UIScreen.main.bounds.size.width - 110)
+            
+        }
+
     }
 }
 

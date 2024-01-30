@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DaftarAntrianList: View {
+struct DaftarPasienList: View {
     var body: some View {
         VStack {
             VStack{
@@ -36,7 +36,7 @@ struct DaftarAntrianList: View {
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
                         .frame(width: 100, alignment: .leading)
-                    Spacer()
+                    Spacer() 
                     Text("Tgl. Daftar")
                         .font(.custom("PlusJakartaSans-Medium", size: 16))
                         .foregroundColor(Color("LightGray"))
@@ -58,9 +58,9 @@ struct DaftarAntrianList: View {
             
             VStack {
                 
-                AntrianPasienListTable()
-                AntrianPasienListTable()
-                AntrianPasienListTable()
+                DaftarPasienListTable()
+                DaftarPasienListTable()
+                DaftarPasienListTable()
                 
                 
                 Spacer()
@@ -73,10 +73,10 @@ struct DaftarAntrianList: View {
     }
 }
 
-struct DaftarAntrianList_Previews: PreviewProvider {
+struct DaftarPasienList_Previews: PreviewProvider {
     static var previews: some View {
-        DaftarAntrianList()
-        DaftarAntrianList().previewInterfaceOrientation(.landscapeRight)
+        DaftarPasienList()
+        DaftarPasienList().previewInterfaceOrientation(.landscapeRight)
         
     }
 }
